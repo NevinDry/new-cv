@@ -59,6 +59,22 @@
               ],
               "serviceWorker": true,
               "ngswConfigPath": "ngsw-config.json"
+            },
+            "dev": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.dev.ts"
+                }
+              ]
+            },
+            "uat": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.uat.ts"
+                }
+              ]
             }
           }
         },
