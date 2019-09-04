@@ -21,6 +21,8 @@
     "@angular/pwa": "^0.803.2",
     "@angular/router": "~8.0.3",
     "@angular/service-worker": "~8.0.3",
+    "@nicky-lenaers/ngx-scroll-to": "^3.0.1",
+    "animate.css": "^3.7.2",
     "bulma": "^0.7.5",
     "rxjs": "~6.4.0",
     "serve": "^11.1.0",

@@ -1,0 +1,63 @@
+@import '../../../styles/variables';
+
+
+.custom-navbar {
+  position: absolute;
+  top: 100vh;
+  right: 4%;
+  background-color: $colorMain;
+  width: 110px;
+  text-align: center;
+  z-index: 3;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+
+.custom-navbar ul li {
+  transition: 0.2s;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+
+}
+
+.custom-navbar ul li:hover {
+  background-color: $colorSecondary;
+  color: black;
+  cursor: pointer;
+}
+
+.custom-navbar .navbar-burger{
+    color:black;
+    background-color: $colorSecondary;
+    height: 40px;
+    margin-left: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+
+@media (max-width: 768px) {
+  .custom-navbar {
+    position: absolute;
+    left: 0;
+    top: 100vh;
+    background-color: $colorMain;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .custom-navbar ul.is-active {
+    display: block;
+  }
+
+  .custom-navbar ul {
+    display: none;
+  }
+
+
+}

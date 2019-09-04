@@ -1,1 +1,19 @@
-<p>navbar works!</p>
+<nav class="custom-navbar is-primary">
+    <a class=" navbar-burger" (click)="toggleBurger()" [ngClass]="burgerIsActive ? 'is-active' : ''" role="button" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+    </a>
+  
+  <a >
+    
+  </a>
+  <ul [ngClass]="burgerIsActive ? 'is-active' : ''">
+    <li>Profile</li>
+    <li>Education</li>
+    <li>Experiences</li>
+    <li>Abilities</li>
+    <li>Works</li>
+    <li>Contact</li>
+  </ul>
+</nav>
