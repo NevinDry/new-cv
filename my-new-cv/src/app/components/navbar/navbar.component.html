@@ -1,4 +1,8 @@
-<nav class="custom-navbar is-primary">
+<nav class="custom-navbar is-primary" 
+    [ngClass]="scrollElement !== 'section-header' ? 'scroll' : ''">
+    <span class="mobile-section-indicator">
+      Profile
+    </span>
     <a class=" navbar-burger" (click)="toggleBurger()" [ngClass]="burgerIsActive ? 'is-active' : ''" role="button" aria-label="menu" aria-expanded="false">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -9,11 +13,11 @@
     
   </a>
   <ul [ngClass]="burgerIsActive ? 'is-active' : ''">
-    <li>Profile</li>
-    <li>Education</li>
-    <li>Experiences</li>
-    <li>Abilities</li>
-    <li>Works</li>
-    <li>Contact</li>
+    <li [ngClass]="scrollElement === 'section-profile' ? 'active' : ''">Profile</li>
+    <li [ngClass]="scrollElement === 'section-education' ? 'active' : ''">Education</li>
+    <li [ngClass]="scrollElement === 'section-experience' ? 'active' : ''">Experiences</li>
+    <li [ngClass]="scrollElement === 'section-1' ? 'active' : ''">Abilities</li>
+    <li [ngClass]="scrollElement === 'section-2' ? 'active' : ''">Works</li>
+    <li [ngClass]="scrollElement === 'section-3' ? 'active' : ''">Contact</li>
   </ul>
 </nav>

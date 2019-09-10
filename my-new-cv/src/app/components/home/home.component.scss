@@ -82,6 +82,13 @@
   animation: bounce 2s infinite;
 }
 
+
+/* PROFILE */
+
+.profile{
+  background-color: white;
+}
+
 .profilPic {
   width: 100%;
   height: 100%;
@@ -117,11 +124,11 @@
   }
 
   .header-content h1 {
-    font-size: 4.25rem;
+    font-size: 3.70rem;
   }
 
   .header-content h2 {
-    font-size: 2.25rem;
+    font-size: 1.25rem;
   }
 
   .header-socials {
@@ -140,6 +147,6 @@
   }
 
   .container h3 {
-     margin-top: 50px;
+     padding-top: 50px;
   }
 }

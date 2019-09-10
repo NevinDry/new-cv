@@ -13,6 +13,11 @@
   border-bottom-right-radius: 5px;
 }
 
+.custom-navbar.scroll{
+  position: fixed;
+  top: 70px;
+}
+
 
 .custom-navbar ul li {
   transition: 0.2s;
@@ -30,6 +35,12 @@
   cursor: pointer;
 }
 
+.custom-navbar ul .active {
+  background-color: $colorSecondary;
+  color: black;
+  cursor: pointer;
+}
+
 .custom-navbar .navbar-burger{
     color:black;
     background-color: $colorSecondary;
@@ -40,16 +51,40 @@
     margin-right: 5px;
 }
 
+.mobile-section-indicator{
+  display: none;
+}
+
 
 @media (max-width: 768px) {
   .custom-navbar {
-    position: absolute;
-    left: 0;
-    top: 100vh;
+    display: none;
+  }
+
+  .custom-navbar.scroll{
+    display: block;
+    position: fixed;
+    top: 0;
     background-color: $colorMain;
     width: 100%;
     border-radius: 0;
+    right: 0;
   }
+
+  .navbar-burger{
+    display: inline-block;
+    float: right;
+  }
+
+  .mobile-section-indicator{
+    display: inline-block;
+    line-height: 50px;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Kaushan Script', cursive;
+
+  }
+  
 
   .custom-navbar ul.is-active {
     display: block;

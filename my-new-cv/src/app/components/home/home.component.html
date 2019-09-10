@@ -1,4 +1,4 @@
-<div class="header has-text-centered">
+<div class="header has-text-centered " uniScrollSpy="section-header">
 
   <a class="header-gihtub" href="https://github.com/NevinDry/new-cv"><img
       src="https://github.blog/wp-content/uploads/2008/12/forkme_left_white_ffffff.png?resize=149%2C149"
@@ -9,7 +9,7 @@
     <h2 class="animated bounceInUp">Full-Stack Developer</h2>
   </div>
   <div class="fade"></div>
-  <a [ngx-scroll-to]="'#profile'" class="arrow-down">
+  <a [ngx-scroll-to]="'#section-profile'" class="arrow-down">
     <i class="fa fa-arrow-circle-down bounce"></i>
   </a>
   <div class="header-socials has-text-centered">
@@ -20,30 +20,47 @@
 
 </div>
 
+<div class="profile">
+  <div class="container" id="section-profile" uniScrollSpy="section-profile">
+    <h3 class="subtitle is-size-1	 has-text-centered has-text-primary p-t-lg">Profile</h3>
+    <hr class="hr">
+    <h4 class="subtitle is-size-3	 has-text-centered has-text-grey-light	 m-t-md">I am a creative Full-Stack Developer
+    </h4>
 
-<div class="container" id="profile">
-  <h3 class="subtitle is-size-1	 has-text-centered has-text-primary m-t-lg">Profile</h3>
-  <h4 class="subtitle is-size-3	 has-text-centered has-text-grey-light	 m-t-md">I am a creative Full-Stack Developer
-  </h4>
-
-  <div class="columns has-text-centered">
-    <div class="column">
-      <h5 class="subtitle is-size-4	has-text-centered has-text-primary m-t-sm">About me</h5>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor omnis numquam nam earum modi temporibus recusandae
-      delectus optio error reiciendis. Facere harum voluptatem facilis quod totam aperiam laborum sint blanditiis.
-      <br>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor omnis numquam nam earum modi temporibus recusandae
-      delectus optio error reiciendis. Facere harum voluptatem facilis quod totam aperiam laborum sint blanditiis.
-    </div>
-    <div class="column is-one-quarter">
-      <img class="profilPic animated zoomIn" alt="Profile" src="../../../assets/nevin.jpg" />
-    </div>
-    <div class="column 	details">
-      <h5 class="subtitle is-size-4 has-text-primary m-t-sm">Details</h5>
+    <div class="columns has-text-centered">
+      <div class="column">
+        <h5 class="subtitle is-size-4	has-text-centered has-text-primary m-t-sm">About me</h5>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor omnis numquam nam earum modi temporibus
+        recusandae
+        delectus optio error reiciendis. Facere harum voluptatem facilis quod totam aperiam laborum sint blanditiis.
+        <br>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor omnis numquam nam earum modi temporibus
+        recusandae
+        delectus optio error reiciendis. Facere harum voluptatem facilis quod totam aperiam laborum sint blanditiis.
+      </div>
+      <div class="column is-one-quarter">
+        <img class="profilPic animated zoomIn" alt="Profile" src="../../../assets/nevin.jpg" />
+      </div>
+      <div class="column 	details">
+        <h5 class="subtitle is-size-4 has-text-primary m-t-sm">Details</h5>
         <span><strong>Name :</strong><br> Etienne Puissant</span><br>
         <span><strong>Phone :</strong><br> +33 6 32 80 66 24</span><br>
         <span><strong>Email : </strong><br> puissant.etienne@gmail.com</span><br>
         <span><strong>Location : </strong><br> Bordeaux, France</span>
+      </div>
     </div>
   </div>
+</div>
+
+
+
+<div class="container" uniScrollSpy="section-education">
+  <h3 class="subtitle is-size-1	 has-text-centered has-text-primary m-t-lg">Education</h3>
+    <hr class="hr"> 
+</div>
+
+
+<div class="container" uniScrollSpy="section-experience">
+  <h3 class="subtitle is-size-1	 has-text-centered has-text-primary m-t-lg">Experiences</h3>
+  <hr class="hr"> 
 </div>

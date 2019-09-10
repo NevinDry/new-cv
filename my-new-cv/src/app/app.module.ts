@@ -1,3 +1,4 @@
+import { NgxScrollspyModule } from '@uniprank/ngx-scrollspy';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -18,6 +19,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    NgxScrollspyModule.forRoot(),
     ScrollToModule.forRoot(),
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
