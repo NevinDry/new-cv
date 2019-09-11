@@ -1,3 +1,4 @@
+import { ScrollService } from './services/scroll.service';
 import { NgxScrollspyModule } from '@uniprank/ngx-scrollspy';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -23,7 +24,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     ScrollToModule.forRoot(),
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
-  providers: [],
+  providers: [
+    ScrollService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

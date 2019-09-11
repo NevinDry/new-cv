@@ -12,7 +12,7 @@
   <a [ngx-scroll-to]="'#section-profile'" class="arrow-down">
     <i class="fa fa-arrow-circle-down bounce"></i>
   </a>
-  <div class="header-socials has-text-centered">
+  <div class="header-socials">
     <a href="https://www.linkedin.com/in/etienne-puissant-2b895a5b/en?locale=en_US&trk=profile_view_lang_sel_click"><i
         class="fa fa-linkedin"></i></a>
     <a href="https://github.com/NevinDry"><i class="fa fa-github"></i></a>
@@ -27,7 +27,7 @@
     <h4 class="subtitle is-size-3	 has-text-centered has-text-grey-light	 m-t-md">I am a creative Full-Stack Developer
     </h4>
 
-    <div class="columns has-text-centered">
+    <div class="columns is-marginless has-text-centered">
       <div class="column">
         <h5 class="subtitle is-size-4	has-text-centered has-text-primary m-t-sm">About me</h5>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor omnis numquam nam earum modi temporibus
@@ -39,28 +39,181 @@
         delectus optio error reiciendis. Facere harum voluptatem facilis quod totam aperiam laborum sint blanditiis.
       </div>
       <div class="column is-one-quarter">
-        <img class="profilPic animated zoomIn" alt="Profile" src="../../../assets/nevin.jpg" />
+        <img class="profilPic " alt="Profile" src="../../../assets/nevin.jpg" />
+
+        <a [ngClass]="scrollService.scrollElement === 'section-profile' ? 'pulse infinite' : ''"
+          class="button animated is-info is-rounded m-t-lg">
+          <span class="icon">
+            <i class="fa fa-download"></i>
+          </span>
+          <span>My static resume</span>
+        </a>
       </div>
       <div class="column 	details">
         <h5 class="subtitle is-size-4 has-text-primary m-t-sm">Details</h5>
         <span><strong>Name :</strong><br> Etienne Puissant</span><br>
         <span><strong>Phone :</strong><br> +33 6 32 80 66 24</span><br>
         <span><strong>Email : </strong><br> puissant.etienne@gmail.com</span><br>
-        <span><strong>Location : </strong><br> Bordeaux, France</span>
+        <span><strong>Location : </strong><br> Bordeaux, France</span><br><br>
+
+        <a href="https://github.com/NevinDry"><i class="fa fa-envelope"></i></a>
+        <a href="https://github.com/NevinDry"><i class="fa fa-phone"></i></a>
+
+
+        <a href="https://www.linkedin.com/in/etienne-puissant-2b895a5b/en?locale=en_US&trk=profile_view_lang_sel_click"><i
+            class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/NevinDry"><i class="fa fa-github"></i></a>
+
       </div>
     </div>
   </div>
 </div>
 
 
+<div class="education is-relative	p-t-lg p-b-lg" uniScrollSpy="section-education">
+  <div class="container">
+    <h3 class="subtitle is-size-1	 has-text-centered has-text-primary ">Education</h3>
+    <hr class="hr">
 
-<div class="container" uniScrollSpy="section-education">
-  <h3 class="subtitle is-size-1	 has-text-centered has-text-primary m-t-lg">Education</h3>
-    <hr class="hr"> 
+    <div class="columns">
+      <div class="column is-two-fifths">
+        <h5 class="is-size-4	has-text-weight-bold	">EPSI Engineering School</h5>
+        <span class="is-size-5">
+          2013 - 2015
+        </span>
+        <br>
+        <span class="has-text-link	">
+          <i class="fa fa-map-pin"></i>
+          Bordeaux, France
+        </span>
+      </div>
+      <div class="column">
+        <h6 class="is-size-5 has-text-weight-bold p-b-sm">Master Degree in Software Engineering</h6>
+        <p>EPSI is an engineering school estalished in 9 cities in France. It propose an engineering course with the
+          possibility to do a part-time training during 3 years in a company. I decided to follow the software
+          engineering
+          course, where i learned to manage and develop projects with various technologies (3D, Java SOA, AI or Restful
+          architecture) and various methodologies (Scrum, lean, pair programming). I finally worked on some more generic
+          skills like security, finances, ludification and customers relationships. At the end of my education, I writed
+          a
+          Master Thesis about the digital revolution for conventional companies.</p>
+      </div>
+    </div>
+
+    <div class="columns m-t-md">
+      <div class="column is-two-fifths">
+        <h5 class="is-size-4	has-text-weight-bold	">EPSI Engineering School</h5>
+        <span class="is-size-5">
+          2011 - 2013
+        </span>
+        <br>
+        <span class="has-text-link	">
+          <i class="fa fa-map-pin"></i>
+          Bordeaux, France
+        </span>
+      </div>
+      <div class="column">
+        <h6 class="is-size-5 has-text-weight-bold p-b-sm">Technical degree in software development </h6>
+        <p>After obtaining my High-School Diploma, I decided to follow a generic IT formation at EPSI Bordeaux for two
+          years, preparing me to integrate an engineering school. During these two years I learned the basics of
+          software developement and system network information.</p>
+      </div>
+    </div>
+
+    <div class="has-text-centered is-fullwidth">
+      <a href="http://www.epsi.fr/"><i class="fa fa-link"></i> http://www.epsi.fr/ </a>
+    </div>
+    <hr class="hr">
+
+    <div class="columns">
+      <div class="column is-two-fifths">
+        <h5 class="is-size-4	has-text-weight-bold	m-t-md">Language Skills</h5>
+
+
+      </div>
+      <div class="column">
+        <span class="is-size-5 has-text-weight-bold">French : </span> Mother tongue
+        <br><br>
+        <span class="is-size-5 has-text-weight-bold">Fluent English : </span> <br>
+        <p>
+          - <strong>7.5 / 9</strong> at the International English Language Testing System <strong>(IELTS)</strong><br>
+          - <strong>915/990</strong> at the Test of English for International Comunication <strong>(TOEIC)</strong><br>
+          - <strong>Three years of professionnal experience</strong> in a full english speaking envirronment in Australia
+        </p>
+      </div>
+    </div>
+
+
+  </div>
 </div>
 
 
-<div class="container" uniScrollSpy="section-experience">
-  <h3 class="subtitle is-size-1	 has-text-centered has-text-primary m-t-lg">Experiences</h3>
-  <hr class="hr"> 
+<div class="experiences is-relative	p-t-lg " uniScrollSpy="section-experience">
+
+  <div class="container">
+    <h3 class="subtitle is-size-1	 has-text-centered has-text-primary">Experiences</h3>
+    <hr class="hr">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor omnis numquam nam earum modi temporibus
+    recusandae
+    delectus optio error reiciendis. Facere harum voluptatem facilis quod totam aperiam laborum sint blanditiis.
+    <br> <br>
+
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor omnis numquam nam earum modi temporibus
+    recusandae
+    delectus optio error reiciendis. Facere harum voluptatem facilis quod totam aperiam laborum sint blanditiis.
+
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor omnis numquam nam earum modi temporibus
+    recusandae
+    delectus optio error reiciendis. Facere harum voluptatem facilis quod totam aperiam laborum sint blanditiis.
+    <br> <br>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor omnis numquam nam earum modi temporibus
+    recusandae
+    delectus optio error reiciendis. Facere harum voluptatem facilis quod totam aperiam laborum sint blanditiis.
+    <br> <br>
+
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor omnis numquam nam earum modi temporibus
+    recusandae
+    delectus optio error reiciendis. Facere harum voluptatem facilis quod totam aperiam laborum sint blanditiis.
+
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor omnis numquam nam earum modi temporibus
+    recusandae
+    delectus optio error reiciendis. Facere harum voluptatem facilis quod totam aperiam laborum sint blanditiis.
+    <br> <br>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor omnis numquam nam earum modi temporibus
+    recusandae
+    delectus optio error reiciendis. Facere harum voluptatem facilis quod totam aperiam laborum sint blanditiis.
+    <br> <br>
+
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor omnis numquam nam earum modi temporibus
+    recusandae
+    delectus optio error reiciendis. Facere harum voluptatem facilis quod totam aperiam laborum sint blanditiis.
+
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor omnis numquam nam earum modi temporibus
+    recusandae
+    delectus optio error reiciendis. Facere harum voluptatem facilis quod totam aperiam laborum sint blanditiis.
+    <br> <br>
+
+
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor omnis numquam nam earum modi temporibus
+    recusandae
+    delectus optio error reiciendis. Facere harum voluptatem facilis quod totam aperiam laborum sint blanditiis.
+    <br>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor omnis numquam nam earum modi temporibus
+    recusandae
+    delectus optio error reiciendis. Facere harum voluptatem facilis quod totam aperiam laborum sint blanditiis.
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor omnis numquam nam earum modi temporibus
+    recusandae
+    delectus optio error reiciendis. Facere harum voluptatem facilis quod totam aperiam laborum sint blanditiis.
+    <br>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor omnis numquam nam earum modi temporibus
+    recusandae
+    delectus optio error reiciendis. Facere harum voluptatem facilis quod totam aperiam laborum sint blanditiis.
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor omnis numquam nam earum modi temporibus
+    recusandae
+    delectus optio error reiciendis. Facere harum voluptatem facilis quod totam aperiam laborum sint blanditiis.
+    <br>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor omnis numquam nam earum modi temporibus
+    recusandae
+    delectus optio error reiciendis. Facere harum voluptatem facilis quod totam aperiam laborum sint blanditiis.
+  </div>
 </div>
