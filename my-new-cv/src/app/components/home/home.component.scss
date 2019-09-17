@@ -1,5 +1,9 @@
 @import '../../../styles/variables';
 
+.container {
+  margin-left: 185px;
+  margin-right: 185px;
+}
 
 .header {
   height: 100vh;
@@ -180,7 +184,7 @@
 /* Experiences */
 
 
-.experiences{
+.experiences {
   background-color: white;
 }
 
@@ -195,9 +199,39 @@
   z-index: 10;
 }
 
+/* ABILITIES */
+.abilities:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  border-bottom: 135px solid transparent;
+  border-left: 400px solid white;
+  width: 0;
+  z-index: 10;
+}
+
+.abilities img {
+  height: 70px;
+}
 
 
-@media (max-width: 768px) {
+
+@media (min-width: 1700px) {
+  .container {
+    margin: auto;
+  }
+
+}
+
+@media (max-width: 1024px) {
+
+  .container {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .header-content {
     top: 15%;
   }
@@ -266,5 +300,29 @@
     border-right: 150px solid beige;
     width: 0;
     z-index: 10;
+  }
+
+  /* ABILITIES */
+  .abilities:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    border-bottom: 80px solid transparent;
+    border-left: 150px solid white;
+    width: 0;
+    z-index: 10;
+  }
+
+  .abilities .ordering {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .abilities .ordering .logos-column {
+    order: 2;
   }
 }

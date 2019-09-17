@@ -1,23 +1,20 @@
 <nav class="custom-navbar is-primary" 
     [ngClass]="scrollService.scrollElement !== 'section-header' ? 'scroll' : ''">
+
     <span class="mobile-section-indicator">
       Profile
     </span>
-    <a class=" navbar-burger" (click)="toggleBurger()" [ngClass]="burgerIsActive ? 'is-active' : ''" role="button" aria-label="menu" aria-expanded="false">
+    <a class="navbar-burger" (click)="toggleBurger()" [ngClass]="burgerIsActive ? 'is-active' : ''" role="button" aria-label="menu" aria-expanded="false">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
     </a>
-  
-  <a >
-    
-  </a>
   <ul [ngClass]="burgerIsActive ? 'is-active' : ''">
-    <li [ngClass]="scrollService.scrollElement === 'section-profile' ? 'active' : ''">Profile</li>
-    <li [ngClass]="scrollService.scrollElement === 'section-education' ? 'active' : ''">Education</li>
-    <li [ngClass]="scrollService.scrollElement === 'section-experience' ? 'active' : ''">Experiences</li>
-    <li [ngClass]="scrollService.scrollElement === 'section-1' ? 'active' : ''">Abilities</li>
-    <li [ngClass]="scrollService.scrollElement === 'section-2' ? 'active' : ''">Works</li>
-    <li [ngClass]="scrollService.scrollElement === 'section-3' ? 'active' : ''">Contact</li>
+    <li [ngx-scroll-to]="'#section-profile'" [ngClass]="scrollService.scrollElement === 'section-profile' ? 'active' : ''">Profile</li>
+    <li [ngx-scroll-to]="'#section-education'" [ngClass]="scrollService.scrollElement === 'section-education' ? 'active' : ''">Education</li>
+    <li [ngx-scroll-to]="'#section-experience'" [ngClass]="scrollService.scrollElement === 'section-experience' ? 'active' : ''">Experiences</li>
+    <li [ngx-scroll-to]="'#section-abilities'" [ngClass]="scrollService.scrollElement === 'section-abilities' ? 'active' : ''">Abilities</li>
+    <li [ngx-scroll-to]="'#section-works'" [ngClass]="scrollService.scrollElement === 'section-works' ? 'active' : ''">Works</li>
+    <li [ngx-scroll-to]="'#section-contact'" [ngClass]="scrollService.scrollElement === 'section-contact' ? 'active' : ''">Contact</li>
   </ul>
 </nav>

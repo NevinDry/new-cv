@@ -24,3 +24,7 @@ p{
   background-image: linear-gradient(to right, #ffdd5752, $colorMain, #ffdd5752);
 
 }
+
+.progress.is-reversed{
+  direction: rtl;
+}
