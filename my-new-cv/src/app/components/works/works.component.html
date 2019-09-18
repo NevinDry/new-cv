@@ -1,0 +1,52 @@
+<div class="works is-relative	p-t-lg">
+  <div class="container">
+    <h3 class="subtitle is-size-1	 has-text-centered has-text-primary p-t-lg">Works</h3>
+    <hr class="hr">
+    <h4 class="subtitle is-size-3	 has-text-centered has-text-grey-light	 m-t-md">Below is a selection of projects I
+      worked on
+    </h4>
+
+    <div class="has-text-centered filter-buttons">
+      <a class="button is-primary is-rounded" (click)="filterWorks('all')"
+        [ngClass]="activeFilter !== 'all' ? 'is-outlined' : ''">All</a>
+      <a class="button is-primary is-rounded" (click)="filterWorks('pro')"
+        [ngClass]="activeFilter !== 'pro' ? 'is-outlined' : ''">Pro</a>
+      <a class="button is-primary is-rounded" (click)="filterWorks('perso')"
+        [ngClass]="activeFilter !== 'perso' ? 'is-outlined' : ''">Perso</a>
+    </div>
+
+    <div class="projects">
+      <div class="columns is-multiline">
+        <ng-container *ngFor="let project of projects;let i = index">
+          <div
+            [ngClass]="selectedProject && selectedProject.name === project.name ? 'is-full project-selected' : 'is-full-mobile is-half-tablet is-half-desktop is-half-widescreen is-one-third-fullhd'"
+            class="column " @fadeIn >
+            <div class="rounded-card" [style.backgroundImage]="'url(../../../assets/projects/' + project.img +')'">
+              <div class="rounded-card-title">
+                {{project.name}}
+              </div>
+              <div class="rounded-card-description">
+                <p>{{project.description}}</p>
+                <a class="button is-warning is-rounded" (click)="selectProject(project)">Read more</a>
+              </div>
+              <div *ngIf="selectedProject && selectedProject.name === project.name" class="rounded-card-content">
+                <a class="selected-project-close" (click)="selectedProject = null"><i class="fa fa-times"></i></a>
+                <p>{{project.description}}</p>
+                <div class="project-selected-actions">
+
+                  <a class="button is-link is-rounded m-r-md">View App</a>
+                  <a class="button is-rounded">
+                    <span class="icon">
+                      <i class="fa fa-github"></i>
+                    </span>
+                    <span>View code</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</div>

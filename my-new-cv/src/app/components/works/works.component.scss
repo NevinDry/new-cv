@@ -1,0 +1,162 @@
+@import '../../../styles/variables';
+
+.works {
+  background-color: white;
+}
+
+.works:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-bottom: 200px solid transparent;
+  border-right: 400px solid beige;
+  width: 0;
+}
+
+.works .filter-buttons a {
+  min-width: 100px;
+  margin: 5px;
+
+}
+
+.works .column {
+  display: flex;
+  justify-content: center;
+  background: white;
+}
+
+
+.works .rounded-card {
+  box-shadow: 4px 4px 6px #aaa;
+  position: relative;
+  height: 280px;
+  width: 280px;
+  margin: 10px;
+  border: solid 10px $colorMain;
+  border-radius: 200px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-bottom: solid 90px #00d1b2;
+  transition: all 0.5s ease;
+}
+
+.works .rounded-card:hover {
+  border-bottom: solid 270px #00d1b2;
+  transition: all 0.5s ease;
+
+  .rounded-card-description {
+    opacity: 0;
+    animation: 0.5s linear 0.1s forwards delayedShow;
+  }
+}
+
+.works .rounded-card-title {
+  text-align: center;
+  position: absolute;
+  font-size: 1.3rem;
+  font-weight: bold;
+  bottom: -50px;
+  color: white;
+  width: 100%;
+}
+
+.works .rounded-card-description {
+  display: block;
+  text-align: center;
+  bottom: -250px;
+  position: absolute;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: white;
+  width: 100%;
+  animation-delay: 0.5s;
+  opacity: 0;
+
+}
+
+@keyframes delayedShow {
+  to {
+    opacity: 1;
+  }
+}
+
+.rounded-card-content {
+  display: none;
+  text-align: center;
+  height: 400px;
+  padding: 80px 10px 5px 10px;
+  position: relative;
+  color: white;
+
+  .selected-project-close {
+    top: 0;
+    right: 20%;
+    position: absolute;
+    font-size: 1.5rem;
+    color: $colorDanger;
+  }
+
+  .project-selected-actions {
+    position: absolute;
+    bottom: 2%;
+    width: 100%;
+  }
+}
+
+.rounded-card .is-warning {
+  background-color: $colorSecondary;
+  color: black;
+}
+
+.works .project-selected {
+  justify-content: left;
+
+  .rounded-card {
+    border-bottom: solid 400px #00d1b2;
+    width: 100%;
+    height: 400px;
+  }
+
+  .rounded-card-description {
+    display: none;
+  }
+
+  .rounded-card:hover .rounded-card-description {
+    opacity: 0;
+    animation: none;
+  }
+
+  .rounded-card-content {
+    display: block;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .works:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom: 80px solid transparent;
+    border-right: 150px solid beige;
+    width: 0;
+    z-index: 10;
+  }
+
+}
+
+@media (min-width: 1700px) {
+  .works .rounded-card {
+    height: 320px;
+    width: 320px;    
+  }
+
+  .works .rounded-card:hover {
+    border-bottom: solid 310px #00d1b2;
+    transition: all 0.5s ease;
+  }
+}
