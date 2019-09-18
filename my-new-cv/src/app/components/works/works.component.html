@@ -20,7 +20,7 @@
         <ng-container *ngFor="let project of projects;let i = index">
           <div
             [ngClass]="selectedProject && selectedProject.name === project.name ? 'is-full project-selected' : 'is-full-mobile is-half-tablet is-half-desktop is-half-widescreen is-one-third-fullhd'"
-            class="column " @fadeIn >
+            class="column " @fadeIn [style.order]="selectedProject && selectedProject.name === project.name ? i-3 : i">
             <div class="rounded-card" [style.backgroundImage]="'url(../../../assets/projects/' + project.img +')'">
               <div class="rounded-card-title">
                 {{project.name}}
