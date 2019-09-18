@@ -1,0 +1,33 @@
+@import '../../../styles/variables';
+/* Experiences */
+
+
+.experiences {
+  background-color: white;
+}
+
+.experiences:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-bottom: 200px solid transparent;
+  border-right: 400px solid beige;
+  width: 0;
+  z-index: 10;
+}
+
+@media (max-width: 1024px) {
+
+  .experiences:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom: 80px solid transparent;
+    border-right: 150px solid beige;
+    width: 0;
+    z-index: 10;
+  }
+
+}

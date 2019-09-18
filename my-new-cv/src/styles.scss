@@ -12,7 +12,7 @@ body {
 
 }
 
-p{
+p {
   line-height: 30px;
 }
 
@@ -23,6 +23,29 @@ p{
   height: 1px;
   background-image: linear-gradient(to right, #ffdd5752, $colorMain, #ffdd5752);
 
+}
+
+.container h3 {
+  padding-top: 50px;
+}
+
+@media (max-width: 1023px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 185px;
+    padding-right: 185px;  }
+}
+
+@media (min-width: 1700px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;  }
 }
 
 .progress.is-reversed{

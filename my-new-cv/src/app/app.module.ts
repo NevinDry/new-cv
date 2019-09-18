@@ -10,12 +10,20 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { environment } from '../environments/environment';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { ProfileComponent } from './components/profile/profile.component';
+import { EductationComponent } from './components/eductation/eductation.component';
+import { ExperienceComponent } from './components/experience/experience.component';
+import { AbilitiesComponent } from './components/abilities/abilities.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    ProfileComponent,
+    EductationComponent,
+    ExperienceComponent,
+    AbilitiesComponent
   ],
   imports: [
     BrowserModule,

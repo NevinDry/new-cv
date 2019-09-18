@@ -1,0 +1,47 @@
+@import '../../../styles/variables';
+/* ABILITIES */
+.abilities:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+    border-bottom: 135px solid transparent;
+    border-left: 400px solid white;
+    width: 0;
+    z-index: 10;
+  }
+  
+  .abilities img {
+    height: 70px;
+  }
+  
+  
+
+@media (max-width: 1024px) {
+
+    /* ABILITIES */
+    .abilities:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+  
+      border-bottom: 80px solid transparent;
+      border-left: 150px solid white;
+      width: 0;
+      z-index: 10;
+    }
+  
+    .abilities .ordering {
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  
+    .abilities .ordering .logos-column {
+      order: 2;
+    }
+  }
+  

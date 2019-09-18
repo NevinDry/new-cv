@@ -1,16 +1,12 @@
 @import '../../../styles/variables';
 
-.container {
-  margin-left: 185px;
-  margin-right: 185px;
-}
-
 .header {
   height: 100vh;
-  background: no-repeat center fixed url("../../../assets/background.jpg");
-  background-size: cover;
+  background: no-repeat center url("../../../assets/background.jpg");
+  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  background-size: cover;
 }
 
 .header:after {
@@ -102,50 +98,6 @@
   animation: bounce 2s infinite;
 }
 
-
-/* PROFILE */
-
-.profile {
-  background-color: white;
-}
-
-.profilPic {
-  width: 100%;
-  border-radius: 100%;
-  object-fit: cover;
-  border: 5px solid $colorMain;
-}
-
-.details {
-  text-align: left;
-}
-
-.details a i {
-  font-size: 2.5rem;
-  padding-right: 20px;
-}
-
-.details a i:hover {
-  color: $colorMain;
-}
-
-
-.details a .fa-linkedin {
-  color: #0e76a8;
-}
-
-.details a .fa-github {
-  color: #24292e;
-}
-
-.details a .fa-envelope {
-  color: cornflowerblue;
-}
-
-.details a .fa-phone {
-  color: cornflowerblue;
-}
-
 @keyframes bounce {
 
   0%,
@@ -165,73 +117,15 @@
   }
 }
 
-
-/* EDUCATION */
-
-.education:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  border-bottom: 135px solid transparent;
-  border-left: 400px solid white;
-  width: 0;
-  z-index: 10;
-}
-
-
-/* Experiences */
-
-
-.experiences {
-  background-color: white;
-}
-
-.experiences:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  border-bottom: 200px solid transparent;
-  border-right: 400px solid beige;
-  width: 0;
-  z-index: 10;
-}
-
-/* ABILITIES */
-.abilities:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  border-bottom: 135px solid transparent;
-  border-left: 400px solid white;
-  width: 0;
-  z-index: 10;
-}
-
-.abilities img {
-  height: 70px;
-}
-
-
-
-@media (min-width: 1700px) {
-  .container {
-    margin: auto;
+//we need this to fix the vh viewmport on IOS, actually webkit-overflow-scrolling exists only on IOS
+@supports (-webkit-overflow-scrolling: touch) {
+  .header {
+    height: -webkit-fill-available;
   }
-
 }
+
 
 @media (max-width: 1024px) {
-
-  .container {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
   .header-content {
     top: 15%;
   }
@@ -262,67 +156,8 @@
     bottom: 0;
   }
 
-  .details {
-    text-align: center;
-  }
-
   .arrow-down {
     right: 0;
     width: 80px;
-  }
-
-  .container h3 {
-    padding-top: 50px;
-  }
-
-
-  /* EDUCATION */
-  .education:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    border-bottom: 80px solid transparent;
-    border-left: 150px solid white;
-    width: 0;
-    z-index: 10;
-  }
-
-  /* EXPERIENCES */
-
-  .experiences:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-bottom: 80px solid transparent;
-    border-right: 150px solid beige;
-    width: 0;
-    z-index: 10;
-  }
-
-  /* ABILITIES */
-  .abilities:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    border-bottom: 80px solid transparent;
-    border-left: 150px solid white;
-    width: 0;
-    z-index: 10;
-  }
-
-  .abilities .ordering {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  .abilities .ordering .logos-column {
-    order: 2;
   }
 }

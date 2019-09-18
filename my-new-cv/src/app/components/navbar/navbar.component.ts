@@ -1,3 +1,4 @@
+import { ScrollString } from './../../enums/ScrollString';
 import { ScrollService } from './../../services/scroll.service';
 import { Component, OnInit } from '@angular/core';
 import { ScrollSpyService, ScrollObjectInterface } from '@uniprank/ngx-scrollspy';
@@ -9,11 +10,16 @@ import { ScrollSpyService, ScrollObjectInterface } from '@uniprank/ngx-scrollspy
 })
 export class NavbarComponent implements OnInit {
   burgerIsActive: boolean = false;
-  scrollElement: any;
+  scrollElement = null;
+  scrollString = "";
 
   constructor(public scrollService: ScrollService) { }
 
   ngOnInit() {
+    this.scrollService.scrollSection.subscribe((value) => {
+      this.scrollElement = value;
+      this.scrollString = ScrollString[value] || "";
+    })
   }
 
   toggleBurger() {
