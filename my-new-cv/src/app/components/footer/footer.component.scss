@@ -16,8 +16,6 @@
   }
 
   .made-with {
-
-
     .made-with-title {
       text-align: center;
       color: white;
@@ -27,7 +25,9 @@
     .made-with-brands {
       display: flex;
       justify-content: space-around;
-
+      >div{
+        width: 100%;
+      }
       img {
         height: 100px;
       }

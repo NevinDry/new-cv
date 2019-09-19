@@ -29,7 +29,7 @@
 
 }
 
-.custom-navbar ul li:hover {
+.custom-navbar ul li:hover(:not(.languages)) {
   background-color: $colorSecondary;
   color: black;
   cursor: pointer;
@@ -44,7 +44,7 @@
 .custom-navbar .navbar-burger{
     color:black;
     background-color: $colorSecondary;
-    height: 40px;
+    height: 45px;
     margin-left: auto;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -53,6 +53,25 @@
 
 .mobile-section-indicator{
   display: none;
+}
+
+
+.languages{
+  img{
+    height: 45px;
+
+    border-radius: 10px; 
+
+    &:hover{
+      cursor: pointer;
+      background-color: $colorSecondary;
+    }
+  }
+}
+
+.languages-mobile{
+  display: none;
+  
 }
 
 @media (max-width: 1024px) {
@@ -73,6 +92,22 @@
   .navbar-burger{
     display: inline-block;
     float: right;
+
+  }
+
+  .languages-mobile{
+    display: inline-block;
+    float: left;
+    margin-top: 5px;
+    img{
+      height: 45px;
+      margin-left: 10px;
+
+      &:active{
+        border-radius: 10px; 
+        background-color: $colorSecondary;
+      }
+    }
   }
 
   .mobile-section-indicator{

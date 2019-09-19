@@ -4,6 +4,9 @@
     <span class="mobile-section-indicator">
       {{scrollString}}
     </span>
+    <div class="languages-mobile">
+        <img src="../../../assets/frflag.png" alt="français" /> <img src="../../../assets/enflag.png" alt="english" />
+    </div>
     <a class="navbar-burger" (click)="toggleBurger()" [ngClass]="burgerIsActive ? 'is-active' : ''" role="button" aria-label="menu" aria-expanded="false">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -16,5 +19,6 @@
     <li [ngx-scroll-to]="'#section-abilities'" [ngClass]="scrollElement === 'section-abilities' ? 'active' : ''">Abilities</li>
     <li [ngx-scroll-to]="'#section-works'" [ngClass]="scrollElement === 'section-works' ? 'active' : ''">Works</li>
     <li [ngx-scroll-to]="'#section-contact'" [ngClass]="scrollElement === 'section-contact' ? 'active' : ''">Contact</li>
+    <li class="languages"><img src="../../../assets/frflag.png" alt="français" /> <img src="../../../assets/enflag.png" alt="english" /></li>
   </ul>
 </nav>
