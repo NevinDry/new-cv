@@ -1,6 +1,7 @@
 import { ScrollService } from 'src/app/services/scroll.service';
 import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
+import { ScrollToService } from '@nicky-lenaers/ngx-scroll-to';
 
 @Component({
   selector: 'app-works',
@@ -26,7 +27,11 @@ export class WorksComponent implements OnInit {
   projects = [];
 
   data = [
-  { name: "Smart Metronome", description: " vla blabla bla blzb  bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla", img: "smartmetro.jpg", type: "perso" },
+  { name: "Smart Metronome", description: " vla blabla bla blzb  bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla",
+  content:"a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla ",
+   img: "smartmetro.jpg", type: "perso",
+  tools: ["js-compressor.jpg", "react-compressor.png", "bulma-compressor.png", "firebase-compressor.png"]
+  },
   { name: "Second", description: " vla blabla bla blzb  bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla", img: "sample.jpg", type: "perso" },
   { name: "Troisieme", description: " vla blabla bla blzb  bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla", img: "sample.jpg", type: "pro" },
   { name: "Quatrieme", description: " vla blabla bla blzb  bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla", img: "sample.jpg", type: "perso" },
@@ -42,7 +47,7 @@ export class WorksComponent implements OnInit {
   animate = false;
   selectedProject: any= null;
 
-  constructor(private scrollService: ScrollService) { }
+  constructor(private scrollService: ScrollService, private _scrollToService: ScrollToService) { }
 
   ngOnInit() {
     this.projects = this.data;

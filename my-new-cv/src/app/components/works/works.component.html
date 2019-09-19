@@ -18,6 +18,9 @@
     <div class="projects">
       <div class="columns is-multiline">
         <ng-container *ngFor="let project of projects;let i = index">
+            <!-- <div
+            [ngClass]="selectedProject && selectedProject.name === project.name ? 'is-full project-selected' : 'is-full-mobile is-half-tablet is-half-desktop is-half-widescreen is-one-third-fullhd'"
+            class="column " @fadeIn [style.order]="selectedProject && selectedProject.name === project.name ? i-3 : i"> -->
           <div
             [ngClass]="selectedProject && selectedProject.name === project.name ? 'is-full project-selected' : 'is-full-mobile is-half-tablet is-half-desktop is-half-widescreen is-one-third-fullhd'"
             class="column " @fadeIn [style.order]="selectedProject && selectedProject.name === project.name ? i-3 : i">
@@ -31,9 +34,30 @@
               </div>
               <div *ngIf="selectedProject && selectedProject.name === project.name" class="rounded-card-content">
                 <a class="selected-project-close" (click)="selectedProject = null"><i class="fa fa-times"></i></a>
-                <p>{{project.description}}</p>
-                <div class="project-selected-actions">
+                <div class="columns">
 
+                  <div class="column is-one-third project-content-image">
+                    <img  [src]="'../../../assets/projects/' + project.img "
+                      [alt]="project.name" />
+                  </div>
+                  <div class="column">
+                    <div class="columns is-multiline">
+                      <div class="column is-full">
+                        <p>{{project.content}}</p>
+                      </div>
+                      <div class="column is-full">
+                        <div class="columns">
+                          <div *ngFor="let tool of project.tools" class="column">
+                              <img class="project-content-tool" [src]="'../../../assets/brands/' + tool "
+                              [alt]="tool" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="project-selected-actions">
                   <a class="button is-link is-rounded m-r-md">View App</a>
                   <a class="button is-rounded">
                     <span class="icon">

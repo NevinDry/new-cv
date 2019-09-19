@@ -104,6 +104,16 @@
     bottom: 2%;
     width: 100%;
   }
+
+  .column {
+
+    background: none;
+  }
+  .project-content-image img {
+    width: 75%;
+    border-radius: 50px;
+  }
+  
 }
 
 .rounded-card .is-warning {
@@ -113,6 +123,7 @@
 
 .works .project-selected {
   justify-content: left;
+
 
   .rounded-card {
     border-bottom: solid 400px #00d1b2;
@@ -134,7 +145,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
 
   .works:after {
     content: "";
@@ -147,16 +158,71 @@
     z-index: 10;
   }
 
+  .rounded-card-content {
+    .project-content-tool {
+      display: none;
+    }
+    .project-content-image{
+      display: none;
+    }
+  }
+  .works .project-selected .rounded-card{
+    border-radius:100px;
+  }
+}
+
+ 
+@media  (min-width: 1024px) and (max-width: 1216px) {
+
+
+  .rounded-card-content {
+    .project-content-tool {
+      display: none;
+    }
+    .project-content-image{
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1217px) and (max-width: 1406px) {
+  .rounded-card-content {
+    .project-content-image img {
+      height: 75%;
+      width: 100%;
+    }
+    .project-content-tool {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1407px) and (max-width: 1700px) {
+  .rounded-card-content {
+    .project-content-tool {
+      height: 45px;
+    }
+    .project-content-image img {
+      height: 75%;
+    }
+  }
 }
 
 @media (min-width: 1700px) {
   .works .rounded-card {
     height: 320px;
-    width: 320px;    
+    width: 320px;
   }
 
   .works .rounded-card:hover {
     border-bottom: solid 310px #00d1b2;
     transition: all 0.5s ease;
   }
+
+
+
+  .project-content-tool {
+    height: 75px;
+  }
+
 }
