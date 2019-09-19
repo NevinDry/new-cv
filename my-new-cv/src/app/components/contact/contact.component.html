@@ -1,0 +1,146 @@
+<div class="contact is-relative	p-t-lg">
+  <div class="container">
+    <h3 class="subtitle is-size-1 has-text-centered has-text-primary p-t-lg">Contact</h3>
+    <hr class="hr">
+    <div class="columns contactColumns">
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmitContactForm()"
+        class="column has-text-left borderColorMain is-three-fifths m-r-sm">
+        <div class="columns ">
+          <div class="column is-full">
+            <span class="subtitle is-4">
+              Vos coordonnées
+            </span>
+          </div>
+        </div>
+
+        <div class="columns ">
+
+
+          <div class="column is-6">
+            <div class="field">
+              <label class="label">Nom</label>
+              <div class="control">
+                <input class="input" type="text" formControlName="surname"
+                  [ngClass]="{ 'is-danger': submitted && contactForm.controls.surname.errors }" />
+                <span class="help is-danger"
+                  *ngIf="submitted && contactForm.controls.surname.errors && contactForm.controls.surname.errors.required">Nom
+                  requis</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-6">
+            <div class="field">
+              <label class="label">Entreprise</label>
+              <div class="control">
+                <input class="input" type="text" formControlName="entreprise" />
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="columns">
+          <div class="column is-6">
+            <div class="field">
+              <label class="label">Email</label>
+              <div class="control has-icons-left has-icons-right">
+                <input class="input" type="email" placeholder="exemple: bla@bla.fr" formControlName="email"
+                  [ngClass]="{ 'is-danger': submitted && contactForm.controls.email.errors }" />
+                <span
+                  *ngIf="submitted && contactForm.controls.email.errors && contactForm.controls.email.errors.required"
+                  class="help is-danger">Email
+                  requis</span>
+                <span *ngIf="submitted && contactForm.controls.email.errors && contactForm.controls.email.errors.email"
+                  class="help is-danger">Email
+                  invalide</span>
+                <span class="icon is-small is-left">
+                  <i class="fa fa-envelope"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-6">
+            <div class="field">
+              <label class="label">Telephone</label>
+              <div class="control has-icons-left">
+                <input class="input" type="text" formControlName="phone">
+                <span class="icon is-small is-left">
+                  <i class="fa fa-phone"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="columns">
+          <div class="column is-full">
+            <div class="field">
+              <label class="label">Message</label>
+              <div class="control">
+                <textarea formControlName="content"
+                  [ngClass]="{ 'is-danger': submitted && contactForm.controls.content.errors }" class="textarea"
+                  placeholder="Ecrivez votre message"></textarea>
+                <div *ngIf="submitted && contactForm.controls.content.errors" class="help is-danger">
+                  <div *ngIf="contactForm.controls.content.errors.required">Message requis</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="columns">
+          <div class="column is-full">
+
+            <div class="field is-grouped">
+              <div class="control send-button">
+                <button *ngIf="!loading" class="button is-rounded is-warning has-text-weight-bold">Envoyer</button>
+                <a *ngIf="loading" class="button is-rounded is-warning is-loading">Envoi</a>
+              </div>
+            </div>
+
+            <div *ngIf="sendMailSuccess" class="notification is-success">
+              <strong>Envoyé avec succés</strong>
+            </div>
+
+            <div *ngIf="sendMailError" class="notification is-danger">
+              Erreur du serveur
+            </div>
+
+          </div>
+        </div>
+
+      </form>
+      <div class="column is-two-fifths mapContainer borderColorMain is-hidden" id="mapContainer">
+
+        <iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB0cGHE4aqMpAahRQPd3Qy3g0KQK1ixgmg
+            &q=Pierre+Perrogon+Chiropracteur+Cognac" allowfullscreen>
+        </iframe>
+
+        <span class="">
+          <span class="has-font-kalam has-text-link">Pierre Perrogon</span><br>
+          <i class="fas fa-map-signs has-text-link	"></i><span style="padding-left:5px;">99 rue de Pons, 16100
+            Cognac</span>
+          <br>
+          <i class="fas fa-phone has-text-link	" style="padding-left:5px;"></i><span> 06 87 62 60 25</span>
+        </span>
+      </div>
+
+      <div class="column details">
+        <h5 class="subtitle is-size-4 m-t-sm">Details</h5>
+        <span><strong>Name :</strong><br> Etienne Puissant</span><br>
+        <span><strong>Phone :</strong><br> +33 6 32 80 66 24</span><br>
+        <span><strong>Email : </strong><br> puissant.etienne@gmail.com</span><br>
+        <span><strong>Location : </strong><br> Bordeaux, France</span><br><br>
+
+        <a href="https://github.com/NevinDry"><i class="fa fa-envelope"></i></a>
+        <a href="https://github.com/NevinDry"><i class="fa fa-phone"></i></a>
+
+
+        <a href="https://www.linkedin.com/in/etienne-puissant-2b895a5b/en?locale=en_US&trk=profile_view_lang_sel_click"><i
+            class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/NevinDry"><i class="fa fa-github"></i></a>
+
+      </div>
+    </div>
+  </div>

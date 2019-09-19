@@ -32,7 +32,7 @@
                 <p>{{project.description}}</p>
                 <a class="button is-warning is-rounded" (click)="selectProject(project)">Read more</a>
               </div>
-              <div *ngIf="selectedProject && selectedProject.name === project.name" class="rounded-card-content">
+              <div *ngIf="selectedProject && selectedProject.name === project.name" [id]="project.name" class="rounded-card-content">
                 <a class="selected-project-close" (click)="selectedProject = null"><i class="fa fa-times"></i></a>
                 <div class="columns">
 

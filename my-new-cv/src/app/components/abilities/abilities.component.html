@@ -133,9 +133,9 @@
   
           <div class="column is-two-third">
             Progressive Web App
-            <progress class="progress is-primary is-reversed" value="90" max="100"></progress>
+            <progress class="progress is-primary is-reversed" [value]="progress - 10" max="100"></progress>
             Nativescript (ios, android)
-            <progress class="progress is-primary is-reversed" value="100" max="100"></progress>
+            <progress class="progress is-primary is-reversed" [value]="progress" max="100"></progress>
           </div>
   
         </div>
@@ -148,9 +148,9 @@
         <div class="columns ordering">
           <div class="column is-two-third">
             SQL (SQL Server, MySQL)
-            <progress class="progress is-primary" value="90" max="100"></progress>
+            <progress class="progress is-primary" [value]="progress - 10" max="100"></progress>
             NoSQL (MongoDB, Firestore)
-            <progress class="progress is-primary" value="90" max="100"></progress>
+            <progress class="progress is-primary" [value]="progress - 10" max="100"></progress>
           </div>
           <div class="column logos-column  has-text-centered">
             <div class="columns is-multiline is-mobile">
@@ -178,13 +178,13 @@
         <div class="columns ordering">
           <div class="column is-two-third">
             Agile software development
-            <progress class="progress is-primary " value="100" max="100"></progress>
+            <progress class="progress is-primary " [value]="progress" max="100"></progress>
             Continuous integration (jenkins, Azure DevOps)
-            <progress class="progress is-primary " value="70" max="100"></progress>
+            <progress class="progress is-primary " [value]="progress - 30" max="100"></progress>
             Testing (frontend, backend, unit, end to end)
-            <progress class="progress is-primary" value="100" max="100"></progress>
+            <progress class="progress is-primary" [value]="progress" max="100"></progress>
             User Experience
-            <progress class="progress is-primary" value="90" max="100"></progress>
+            <progress class="progress is-primary" [value]="progress - 10" max="100"></progress>
           </div>
           <div class="column logos-column  has-text-centered">
             <div class="columns is-multiline is-mobile">

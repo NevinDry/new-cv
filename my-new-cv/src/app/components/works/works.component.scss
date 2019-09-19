@@ -84,12 +84,14 @@
 }
 
 .rounded-card-content {
-  display: none;
+  opacity: 0;
   text-align: center;
   height: 400px;
   padding: 80px 10px 5px 10px;
   position: relative;
   color: white;
+  animation: 0.5s linear 0.1s forwards delayedShow;
+  animation-delay: 0.35s;
 
   .selected-project-close {
     top: 0;

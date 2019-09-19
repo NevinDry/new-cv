@@ -29,18 +29,39 @@ export class WorksComponent implements OnInit {
   data = [
   { name: "Smart Metronome", description: " vla blabla bla blzb  bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla",
   content:"a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla ",
-   img: "smartmetro.jpg", type: "perso",
-  tools: ["js-compressor.jpg", "react-compressor.png", "bulma-compressor.png", "firebase-compressor.png"]
+   img: "smartmetro-compressor.jpg", type: "perso",
+  tools: ["js-compressor.jpg", "react-compressor.png", "pwa-compressor.png", "firebase-compressor.png"]
   },
-  { name: "Second", description: " vla blabla bla blzb  bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla", img: "sample.jpg", type: "perso" },
-  { name: "Troisieme", description: " vla blabla bla blzb  bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla", img: "sample.jpg", type: "pro" },
-  { name: "Quatrieme", description: " vla blabla bla blzb  bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla", img: "sample.jpg", type: "perso" },
-  { name: "Fivieme", description: " vla blabla bla blzb  bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla", img: "sample.jpg", type: "pro" },
-  { name: "Sixiemee", description: " vla blabla bla blzb  bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla", img: "sample.jpg", type: "pro" },
-  { name: "Septieme", description: " vla blabla bla blzb  bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla", img: "sample.jpg", type: "perso" },
-  { name: "Huitieme", description: " vla blabla bla blzb  bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla", img: "sample.jpg", type: "perso" },
-  { name: "Neuvieme", description: " vla blabla bla blzb  bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla", img: "sample.jpg", type: "pro" },
-  { name: "Dix", description: " vla blabla bla blzb  bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla", img: "sample.jpg", type: "pro" },
+  { name: "Mean Stack Blog", description: " vla blabla bla blzb  bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla",
+  content:"a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla ",
+   img: "blog-compressor.jpg", type: "perso",
+  tools: ["angular-compressor.png", "boostrap-compressor.png", "express-compressor.png", "mongo-compressor.png"]
+  },
+  { name: "Temtem Tools", description: " vla blabla bla blzb  bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla",
+  content:"a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla ",
+   img: "temtem-compressor.jpg", type: "perso",
+  tools: ["react-compressor.png", "materialui-compressor.png", "firebase-compressor.png", "firestore-compressor.png"]
+  },
+  { name: "Chiropracteur", description: " vla blabla bla blzb  bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla",
+  content:"a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla ",
+   img: "ifec-compressor.png", type: "perso",
+   tools: ["angular-compressor.png", "bulma-compressor.png", "firebase-compressor.png"]
+  },
+  { name: "Space Invaders 3D", description: " vla blabla bla blzb  bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla",
+  content:"a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla ",
+   img: "space-compressor.jpg", type: "perso",
+   tools: ["js-compressor.jpg", "threejs-compressor.png", "php-compressor.png"]
+  },
+  { name: "Google Glass", description: " vla blabla bla blzb  bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla",
+  content:"a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla ",
+   img: "gglass-compressor.jpg", type: "perso",
+   tools: ["java-compressor.png", "iosand-compressor.png"]
+  },
+  { name: "BA365 App", description: " vla blabla bla blzb  bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla",
+  content:"a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla ",
+   img: "ba365-compressor.jpg", type: "pro",
+   tools: ["angular-compressor.png", "tns-compressor.png", "iosand-compressor.png", "estimote-compressor.png"]
+  },
 ];
 
 
@@ -71,6 +92,7 @@ export class WorksComponent implements OnInit {
 
   selectProject(project){
     this.selectedProject = project;
+
   }
 
 }
