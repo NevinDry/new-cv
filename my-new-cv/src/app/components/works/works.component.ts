@@ -54,7 +54,7 @@ export class WorksComponent implements OnInit {
   },
   { name: "Google Glass", description: " vla blabla bla blzb  bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla",
   content:"a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla ",
-   img: "gglass-compressor.jpg", type: "perso",
+   img: "gglass-compressor.jpg", type: "pro",
    tools: ["java-compressor.png", "iosand-compressor.png"]
   },
   { name: "BA365 App", description: " vla blabla bla blzb  bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla",

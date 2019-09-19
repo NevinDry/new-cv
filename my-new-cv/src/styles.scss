@@ -22,7 +22,16 @@ p {
   width: 100%;
   height: 1px;
   background-image: linear-gradient(to right, #ffdd5752, $colorMain, #ffdd5752);
+}
 
+.hrExp{
+  display: block;
+  clear: both;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 1px;
+  background-image: linear-gradient(to right, #ffdd5752, black, #ffdd5752);
 }
 
 .container h3 {

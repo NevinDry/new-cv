@@ -1,3 +1,31 @@
+/* ABILITIES */
+.contact:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  border-bottom: 135px solid transparent;
+  border-left: 400px solid white;
+  width: 0;
+  z-index: 10;
+}
+
+@media (max-width: 1024px) {
+
+  /* ABILITIES */
+  .contact:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    border-bottom: 80px solid transparent;
+    border-left: 150px solid white;
+    width: 0;
+    z-index: 10;
+  }
+}
 
 @media (max-width: 769px) {
   .contact .send-button {
