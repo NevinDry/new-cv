@@ -43,7 +43,7 @@
   transition: all 0.5s ease;
 }
 
-.works .rounded-card:hover {
+.works .project-container:hover .rounded-card{
   border-bottom: solid 270px #00d1b2;
   transition: all 0.5s ease;
 
@@ -137,7 +137,7 @@
     display: none;
   }
 
-  .rounded-card:hover .rounded-card-description {
+  .project-container:hover .rounded-card .rounded-card-description {
     opacity: 0;
     animation: none;
   }
@@ -216,7 +216,7 @@
     width: 320px;
   }
 
-  .works .rounded-card:hover {
+  .works .project-container:hover .rounded-card {
     border-bottom: solid 310px #00d1b2;
     transition: all 0.5s ease;
   }
