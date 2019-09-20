@@ -1,14 +1,14 @@
 <div class="contact is-relative	p-t-lg">
   <div class="container">
-    <h3 class="subtitle is-size-1 has-text-centered has-text-primary p-t-lg">Contact</h3>
+    <h3 class="subtitle is-size-1 has-text-centered has-text-primary p-t-lg">{{'SECTIONS.CONTACT' | translate}}</h3>
     <hr class="hr">
     <div class="columns contactColumns">
-      <form [formGroup]="contactForm" (ngSubmit)="onSubmitContactForm()"
+      <form [formGroup]="contactForm" 
         class="column has-text-left borderColorMain is-three-fifths m-r-sm">
         <div class="columns ">
           <div class="column is-full">
             <span class="subtitle is-4">
-              Vos coordonnées
+              {{'CONTACT.TITLE' | translate}}
             </span>
           </div>
         </div>
@@ -18,20 +18,20 @@
 
           <div class="column is-6">
             <div class="field">
-              <label class="label">Nom</label>
+              <label class="label">{{'CONTACT.FORM.NAME' | translate}}</label>
               <div class="control">
                 <input class="input" type="text" formControlName="surname"
                   [ngClass]="{ 'is-danger': submitted && contactForm.controls.surname.errors }" />
                 <span class="help is-danger"
-                  *ngIf="submitted && contactForm.controls.surname.errors && contactForm.controls.surname.errors.required">Nom
-                  requis</span>
+                  *ngIf="submitted && contactForm.controls.surname.errors && contactForm.controls.surname.errors.required">{{'CONTACT.FORM.NAME' | translate}}
+                  {{'CONTACT.FORM.REQ' | translate}}</span>
               </div>
             </div>
           </div>
 
           <div class="column is-6">
             <div class="field">
-              <label class="label">Entreprise</label>
+              <label class="label">{{'CONTACT.FORM.ENTREPRISE' | translate}}</label>
               <div class="control">
                 <input class="input" type="text" formControlName="entreprise" />
               </div>
@@ -44,15 +44,15 @@
             <div class="field">
               <label class="label">Email</label>
               <div class="control has-icons-left has-icons-right">
-                <input class="input" type="email" placeholder="exemple: bla@bla.fr" formControlName="email"
+                <input class="input" type="email" formControlName="email"
                   [ngClass]="{ 'is-danger': submitted && contactForm.controls.email.errors }" />
                 <span
                   *ngIf="submitted && contactForm.controls.email.errors && contactForm.controls.email.errors.required"
                   class="help is-danger">Email
-                  requis</span>
+                  {{'CONTACT.FORM.REQ' | translate}}</span>
                 <span *ngIf="submitted && contactForm.controls.email.errors && contactForm.controls.email.errors.email"
                   class="help is-danger">Email
-                  invalide</span>
+                  {{'CONTACT.FORM.INV' | translate}}</span>
                 <span class="icon is-small is-left">
                   <i class="fa fa-envelope"></i>
                 </span>
@@ -62,7 +62,7 @@
 
           <div class="column is-6">
             <div class="field">
-              <label class="label">Telephone</label>
+              <label class="label">{{'CONTACT.FORM.PHONE' | translate}}</label>
               <div class="control has-icons-left">
                 <input class="input" type="text" formControlName="phone">
                 <span class="icon is-small is-left">
@@ -76,13 +76,14 @@
         <div class="columns">
           <div class="column is-full">
             <div class="field">
-              <label class="label">Message</label>
+              <label class="label">{{'CONTACT.FORM.MSG' | translate}}</label>
               <div class="control">
                 <textarea formControlName="content"
                   [ngClass]="{ 'is-danger': submitted && contactForm.controls.content.errors }" class="textarea"
-                  placeholder="Ecrivez votre message"></textarea>
+                  [placeholder]="'CONTACT.FORM.PH' | translate"></textarea>
                 <div *ngIf="submitted && contactForm.controls.content.errors" class="help is-danger">
-                  <div *ngIf="contactForm.controls.content.errors.required">Message requis</div>
+                  <div *ngIf="contactForm.controls.content.errors.required">{{'CONTACT.FORM.MSG' | translate}}
+                    {{'CONTACT.FORM.REQ' | translate}}</div>
                 </div>
               </div>
             </div>
@@ -94,17 +95,22 @@
 
             <div class="field is-grouped">
               <div class="control send-button">
-                <button *ngIf="!loading" class="button is-rounded is-warning has-text-weight-bold">Envoyer</button>
-                <a *ngIf="loading" class="button is-rounded is-warning is-loading">Envoi</a>
+                <a *ngIf="loading" class="button is-rounded is-warning is-loading">{{'CONTACT.FORM.SENDING' | translate}}</a>
+                <a *ngIf="!loading" class="button is-rounded is-warning has-text-weight-bold" type="submit" (click)="onSubmitContactForm()">
+                  <span class="icon">
+                    <i class="fa fa-paper-plane"></i>
+                  </span>
+                  <span>{{'CONTACT.FORM.SEND' | translate}}</span>
+                </a>
               </div>
             </div>
 
             <div *ngIf="sendMailSuccess" class="notification is-success">
-              <strong>Envoyé avec succés</strong>
+              <strong>{{'CONTACT.FORM.SUCCESS' | translate}}</strong>
             </div>
 
             <div *ngIf="sendMailError" class="notification is-danger">
-              Erreur du serveur
+              {{'CONTACT.FORM.ERROR' | translate}}
             </div>
 
           </div>
@@ -113,20 +119,7 @@
       </form>
 
       <div class="column details">
-        <h5 class="subtitle is-size-4 m-t-sm">Details</h5>
-        <span><strong>Name :</strong><br> Etienne Puissant</span><br>
-        <span><strong>Phone :</strong><br> +33 6 32 80 66 24</span><br>
-        <span><strong>Email : </strong><br> puissant.etienne@gmail.com</span><br>
-        <span><strong>Location : </strong><br> Bordeaux, France</span><br><br>
-
-        <a href="https://github.com/NevinDry"><i class="fa fa-envelope"></i></a>
-        <a href="https://github.com/NevinDry"><i class="fa fa-phone"></i></a>
-
-
-        <a href="https://www.linkedin.com/in/etienne-puissant-2b895a5b/en?locale=en_US&trk=profile_view_lang_sel_click"><i
-            class="fa fa-linkedin"></i></a>
-        <a href="https://github.com/NevinDry"><i class="fa fa-github"></i></a>
-
+        <app-details></app-details>
       </div>
     </div>
   </div>

@@ -1,20 +1,15 @@
 <div class="profile">
     <div class="container" >
-      <h3 class="subtitle is-size-1	 has-text-centered has-text-primary p-t-lg">Profile</h3>
+      <h3 class="subtitle is-size-1	 has-text-centered has-text-primary p-t-lg">{{'SECTIONS.PROFILE' | translate}}</h3>
       <hr class="hr">
-      <h4 class="subtitle is-size-3	 has-text-centered has-text-grey-light	 m-t-md">I am a creative Full-Stack Developer
+      <h4 class="subtitle is-size-3	 has-text-centered has-text-grey-light	 m-t-md">{{'PROFILE.LEAD' | translate}}
       </h4>
   
       <div class="columns is-marginless has-text-centered">
         <div class="column">
-          <h5 class="subtitle is-size-4	has-text-centered has-text-primary m-t-sm">About me</h5>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor omnis numquam nam earum modi temporibus
-          recusandae
-          delectus optio error reiciendis. Facere harum voluptatem facilis quod totam aperiam laborum sint blanditiis.
-          <br>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor omnis numquam nam earum modi temporibus
-          recusandae
-          delectus optio error reiciendis. Facere harum voluptatem facilis quod totam aperiam laborum sint blanditiis.
+          <h5 class="subtitle is-size-4	has-text-centered has-text-primary m-t-sm">{{'PROFILE.ABOUT' | translate}}</h5>
+          <p [innerHTML]="'PROFILE.CONTENT' | translate">
+          </p>
         </div>
         <div class="column is-one-quarter">
           <img class="profilPic " alt="Profile" src="../../../assets/nevin.jpg" />
@@ -23,24 +18,11 @@
             <span class="icon">
               <i class="fa fa-download"></i>
             </span>
-            <span>My static resume</span>
+            <span>{{'PROFILE.RESUME' | translate}}</span>
           </a>
         </div>
         <div class="column 	details">
-          <h5 class="subtitle is-size-4 has-text-primary m-t-sm">Details</h5>
-          <span><strong>Name :</strong><br> Etienne Puissant</span><br>
-          <span><strong>Phone :</strong><br> +33 6 32 80 66 24</span><br>
-          <span><strong>Email : </strong><br> puissant.etienne@gmail.com</span><br>
-          <span><strong>Location : </strong><br> Bordeaux, France</span><br><br>
-  
-          <a href="https://github.com/NevinDry"><i class="fa fa-envelope"></i></a>
-          <a href="https://github.com/NevinDry"><i class="fa fa-phone"></i></a>
-  
-  
-          <a href="https://www.linkedin.com/in/etienne-puissant-2b895a5b/en?locale=en_US&trk=profile_view_lang_sel_click"><i
-              class="fa fa-linkedin"></i></a>
-          <a href="https://github.com/NevinDry"><i class="fa fa-github"></i></a>
-  
+          <app-details></app-details>
         </div>
       </div>
     </div>

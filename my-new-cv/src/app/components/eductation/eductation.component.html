@@ -1,11 +1,11 @@
 <div class="education is-relative	p-t-lg p-b-lg" >
     <div class="container">
-      <h3 class="subtitle is-size-1	 has-text-centered has-text-primary ">Education</h3>
+      <h3 class="subtitle is-size-1	 has-text-centered has-text-primary ">{{'SECTIONS.EDU' | translate}}</h3>
       <hr class="hr">
   
       <div class="columns">
         <div class="column is-two-fifths">
-          <h5 class="is-size-4	has-text-weight-bold	">EPSI Engineering School</h5>
+          <h5 class="is-size-4	has-text-weight-bold	">{{'EDU.EPSI' | translate}}</h5>
           <span class="is-size-5">
             2013 - 2015
           </span>
@@ -16,21 +16,14 @@
           </span>
         </div>
         <div class="column">
-          <h6 class="is-size-5 has-text-weight-bold p-b-sm">Master Degree in Software Engineering</h6>
-          <p>EPSI is an engineering school estalished in 9 cities in France. It propose an engineering course with the
-            possibility to do a part-time training during 3 years in a company. I decided to follow the software
-            engineering
-            course, where i learned to manage and develop projects with various technologies (3D, Java SOA, AI or Restful
-            architecture) and various methodologies (Scrum, lean, pair programming). I finally worked on some more generic
-            skills like security, finances, ludification and customers relationships. At the end of my education, I writed
-            a
-            Master Thesis about the digital revolution for conventional companies.</p>
+          <h6 class="is-size-5 has-text-weight-bold p-b-sm">{{'EDU.MASTER.TITLE' | translate}}</h6>
+          <p [innerHTML]="'EDU.MASTER.CONTENT' | translate"></p>
         </div>
       </div>
   
       <div class="columns m-t-md">
         <div class="column is-two-fifths">
-          <h5 class="is-size-4	has-text-weight-bold	">EPSI Engineering School</h5>
+          <h5 class="is-size-4	has-text-weight-bold	">{{'EDU.EPSI' | translate}}</h5>
           <span class="is-size-5">
             2011 - 2013
           </span>
@@ -41,10 +34,8 @@
           </span>
         </div>
         <div class="column">
-          <h6 class="is-size-5 has-text-weight-bold p-b-sm">Technical degree in software development </h6>
-          <p>After obtaining my High-School Diploma, I decided to follow a generic IT formation at EPSI Bordeaux for two
-            years, preparing me to integrate an engineering school. During these two years I learned the basics of
-            software developement and system network information.</p>
+          <h6 class="is-size-5 has-text-weight-bold p-b-sm">{{'EDU.BTS.TITLE' | translate}} </h6>
+          <p [innerHTML]="'EDU.BTS.CONTENT' | translate"></p>
         </div>
       </div>
   
@@ -55,20 +46,15 @@
   
       <div class="columns">
         <div class="column is-two-fifths">
-          <h5 class="is-size-4	has-text-weight-bold	m-t-md">Language Skills</h5>
+          <h5 class="is-size-4	has-text-weight-bold	m-t-md">{{'EDU.LANG' | translate}}</h5>
   
   
         </div>
         <div class="column">
-          <span class="is-size-5 has-text-weight-bold">French : </span> Mother tongue
+          <span class="is-size-5 has-text-weight-bold">{{'EDU.FRENCH.TITLE' | translate}} : </span> {{'EDU.FRENCH.CONTENT' | translate}}
           <br><br>
-          <span class="is-size-5 has-text-weight-bold">Fluent English : </span> <br>
-          <p>
-            - <strong>Three years of professionnal experience</strong> in a full english speaking envirronment in
-            Australia<br>
-            - <strong>7.5 / 9</strong> at the International English Language Testing System <strong>(IELTS)</strong><br>
-            - <strong>915/990</strong> at the Test of English for International Comunication <strong>(TOEIC)</strong>
-          </p>
+          <span class="is-size-5 has-text-weight-bold">{{'EDU.ENGLISH.TITLE' | translate}} : </span> <br>
+          <p [innerHTML]="'EDU.ENGLISH.CONTENT' | translate"></p>
         </div>
       </div>
   

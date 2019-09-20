@@ -21,6 +21,8 @@
     "@angular/pwa": "^0.803.2",
     "@angular/router": "~8.0.3",
     "@angular/service-worker": "~8.0.3",
+    "@ngx-translate/core": "^11.0.1",
+    "@ngx-translate/http-loader": "^4.0.0",
     "@nicky-lenaers/ngx-scroll-to": "^3.0.1",
     "@uniprank/ngx-scrollspy": "^1.0.5",
     "animate.css": "^3.7.2",
