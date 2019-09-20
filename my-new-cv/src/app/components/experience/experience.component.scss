@@ -6,7 +6,12 @@
   background-color: white;
 
   img {
-    width: 30%;
+    width: 40%;
+  }
+  .company-picture {
+    img {
+      width: 80%;
+    }
   }
 }
 
@@ -40,20 +45,32 @@
 
   }
 
-  i{
-    color:gray;
+  i {
+    color: gray;
   }
 
-  
+
 }
-.mission-container .mission-content:last-child .mission-separator{
-  .mission-line{
+
+.mission-container .mission-content:last-child .mission-separator {
+  .mission-line {
     margin-top: 28px;
     margin-bottom: 28px;
   }
 
 }
 
+@media (max-width: 769px) {
+  .experiences {
+    .company-picture {
+      text-align: center;
+
+      img {
+        width: 40%;
+      }
+    }
+  }
+}
 
 @media (max-width: 1024px) {
 
