@@ -5,7 +5,8 @@
       {{scrollString}}
     </span>
     <div class="languages-mobile">
-        <img src="../../../assets/frflag.png" alt="français" /> <img src="../../../assets/enflag.png" alt="english" />
+        <img src="../../../assets/frflag.png" [ngClass]="lang === 'fr' ? 'active' : ''" (click)="changeLang('fr')" alt="français" /> 
+        <img src="../../../assets/enflag.png" [ngClass]="lang === 'eng' ? 'active' : ''" (click)="changeLang('eng')" alt="english" />
     </div>
     <a class="navbar-burger" (click)="toggleBurger()" [ngClass]="burgerIsActive ? 'is-active' : ''" role="button" aria-label="menu" aria-expanded="false">
             <span aria-hidden="true"></span>

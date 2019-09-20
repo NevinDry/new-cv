@@ -72,7 +72,6 @@
 
 .languages-mobile{
   display: none;
-  
 }
 
 @media (max-width: 1024px) {
@@ -104,10 +103,15 @@
       height: 45px;
       margin-left: 10px;
 
+      &.active{
+        background-color: $colorSecondary;
+      }
+
       &:active{
         border-radius: 10px; 
         background-color: $colorSecondary;
       }
+      
     }
   }
 
