@@ -12,7 +12,7 @@
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
     </a>
-  <ul [ngClass]="burgerIsActive ? 'is-active' : ''">
+  <ul [ngClass]="burgerIsActive ? 'is-active' : ''" (click)="burgerIsActive = false">
     <li [ngx-scroll-to]="'#section-profile'" [ngClass]="scrollElement === 'section-profile' ? 'active' : ''">Profile</li>
     <li [ngx-scroll-to]="'#section-education'" [ngClass]="scrollElement === 'section-education' ? 'active' : ''">Education</li>
     <li [ngx-scroll-to]="'#section-experience'" [ngClass]="scrollElement === 'section-experience' ? 'active' : ''">Experiences</li>

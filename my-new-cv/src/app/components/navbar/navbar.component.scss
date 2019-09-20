@@ -26,10 +26,9 @@
   color: white;
   font-weight: bold;
   font-size: 1rem;
-
 }
 
-.custom-navbar ul li:hover(:not(.languages)) {
+.custom-navbar ul li:not(.languages):hover  {
   background-color: $colorSecondary;
   color: black;
   cursor: pointer;
@@ -38,7 +37,6 @@
 .custom-navbar ul .active {
   background-color: $colorSecondary;
   color: black;
-  cursor: pointer;
 }
 
 .custom-navbar .navbar-burger{
