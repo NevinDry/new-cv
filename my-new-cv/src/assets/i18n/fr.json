@@ -16,24 +16,24 @@
   "PROFILE": {
     "LEAD": "Je suis un developpeur full-stack créatif",
     "ABOUT": "À propos",
-    "CONTENT": "Lorem ipsum dolor sit, amet <strong>consectetur</strong> adipisicing elit.Dolor omnis numquam nam earum modi temporibus recusandae delectus optio error reiciendis <br>.Facere harum voluptatem facilis quod totam aperiam laborum sint blanditiis.",
+    "CONTENT": "Aprés trois ans d'experience en alternance et mon diplôme d'ingénieur en poche, j'ai décidé de partir à l'étranger pour perfectionner mes connaissances techniques et relationnelles en Australie. <br> <br> De retour en France après trois ans, je suis à la recherche d'une nouvelle aventure au sein d'une équipe de développpement pour apporter mes connaissances et les enrichir. ",
     "DETAILS": {
       "TITLE": "Détails",
       "NAME": "Nom",
       "PHONE": "Télephone",
       "LOCATION": "Localisation"
     },
-    "RESUME": "Mon CV classique"
+    "RESUME": "CV classique"
   },
   "EDU": {
     "EPSI": "Ecole d'ingénierie EPSI",
     "MASTER": {
       "TITLE": "Diplôme d'Ingénieur en solutions logicielles",
-      "CONTENT": "EPSI is an engineering school estalished in 9 cities in France. It propose an engineering course with the possibility to do a part-time training during 3 years in a company. I decided to follow the software engineering course, where i learned to manage and develop projects with various technologies (3D, Java SOA, AI or Restful architecture) and various methodologies (Scrum, lean, pair programming). I finally worked on some more generic skills like security, finances, ludification and customers relationships. At the end of my education, I writed a Master Thesis about the digital revolution for conventional companies."
+      "CONTENT": "L'EPSI est une école d'ingenieur informatique basée dans 10 villes en France qui propose un cycle d'<b>ingéniérie informatique en alternance</b> pendant 3 ans. J'ai décidé de suivre <b>le cycle d'ingénieur logiciel </b> où j'ai pu apprendre à <b>développer et gérer des projets informatiques </b> en utilisant de multiples techonologies et méthodologies. D'autres sujets tel que la <b>sécurité, la relation client et la gamification</b> m'ont été enseigné durant ma formation. A la fin de celle-ci, j'ai écris <a href='https://drive.google.com/drive/u/0/folders/0B8mnVHL4jn2_SDFhcGtKNFJ1ck0'>un mémoire</a> sur le virage digital des entreprises classiques en collaboration avec Pernod-Ricard, mon entreprise d'alternance."
     },
     "BTS": {
       "TITLE": "BTS de dévelopement informatique",
-      "CONTENT": "After obtaining my High-School Diploma, I decided to follow a generic IT formation at EPSI Bordeaux for two years, preparing me to integrate an engineering school. During these two years I learned the basics of software developement and system network information."
+      "CONTENT": "Aprés l'obtention de mon bac, j'ai décidé de suivre une formation générique en informatique à L'EPSI Bordeaux pour me <b>préparer à l'intégration d'une école d'ingénieur</b>. Pendant deux ans, j'ai acquéris de <b>solides bases en développement et réseau système</b>."
     },
     "LANG": "Langues",
     "FRENCH": {
@@ -77,7 +77,7 @@
         "CONTENT": "Management and development of Google Glass Application</b> within the innovation hub of the company. The goal was to propose and create useful apps for the company activity with Google Glass."
       },
       "SECOND": {
-        "TITLE": "Second mission (2015)",
+        "TITLE": "Deuxieme mission (2015)",
         "CONTENT": "Management and development of Google Glass Application within the innovation hub of the company. The goal was to propose and create useful apps for the company activity with Google Glass."
       }
     },
@@ -103,6 +103,7 @@
 
     },
     "OTHERS": {
+      "TITLE": "Autre",
       "TM": "Travail d'équipe",
       "DESIRE": "Soif d'apprendre"
     }
@@ -115,7 +116,7 @@
     "GITHUB": "Voir code"
   },
   "CONTACT": {
-    "TITLE": "Vos coordonnes",
+    "TITLE": "Vos coordonnées",
     "FORM":{
       "NAME": "Nom",
       "ENTREPRISE": "Entreprise",
