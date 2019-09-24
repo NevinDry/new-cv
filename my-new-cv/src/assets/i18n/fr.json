@@ -48,46 +48,46 @@
   "EXP": {
     "1ICT": {
       "TITLE": "Développeur Full Stack",
-      "LEAD": "J'ai participé a plusieurs missions chez 1ICT qui est une entreprise de services informatique basée à Brisbane. Pendant trois j'ai pu solidifier mes aptitudes en développement en utilisant diverses technologies de pointe tout en améliorant mes compétences relationnelles et gestion (en anglais) par le biais de plusieurs gestion de projet client.",
+      "LEAD": "J'ai participé a plusieurs missions chez 1ICT, une des entreprise de services informatiques possédant <b>la plus forte croissance en Australie</b>. Pendant trois j'ai tenu un rôle important dans la réalisation de plusieurs <b>projets Webs</b>, inlcuant le <b>développment</b>, <b>le déploiment et le maintiens</b> de solutions Web, ainsi que <b>le chiffrage et la gestion de projets client</b>.  J'ai travaillé dans différents environements, requierant une forte <b>adaptabilité et agilité</b> pour accomplir les objéctifs. Cela implique une <b>communications clair et constante<b/> entre l'équipe et le client pour mettre en place des solutions à de complexes besoins métiers.",
       "MISSIONS": {
         "TITLE": "Descriptif des missions",
         "DOMINOS": {
           "TITLE": "Dominos Pizza",
-          "CONTENT": "Consultant chez le plus gros client de l'entreprise qui est Dominos Pizza. Là-bas j'ai mis en place des solutions logicielles de type back-office et frontend pour la gestion de leur magasins. J'ai dû m'adapter à l'équipe de développement de Dominos qui est à la pointe de la technologie dans la région de Brisbane. J'ai utilisé des technologies telles que Windows Azure, Angular 2+, KnockoutJS, C#, SQL Serveur."
+          "CONTENT": "J'ai dabord était envoyé en tant que consultant chez un client de l'entreprise : <b>Dominos Pizza</b>. Là-bas j'ai <b>mis en place des solutions logicielles de type back-office et frontend</b> pour la gestion de leur magasins. J'ai dû m'adapter à l'équipe de développement de Dominos qui est à la pointe de la technologie dans la région de Brisbane. J'ai utilisé des technologies telles que <b>Windows Azure, Angular 2+, KnockoutJS, C#, SQL Serveur</b>."
         },
         "CASH": {
           "TITLE": "CashFlowMapper",
-          "CONTENT": "J'ai ensuite migré, piloté et développé un projet de site internet de flux financier pour un client avec qui je traitais directement pour obtenir les besoins, informations. Nous utilisions une méthodologie AGILE tout au long du développement du produit. Les technologies utilisées sont les suivantes : Javascript, C# et Microsoft Azure."
+          "CONTENT": "<b>Gestion de la migration et du développement</b> d'une apllication web de <b>flux financiers</b> pour un client de l'entreprise. Un de mes objéctifs était de <b>réaliser des chiffrages</b> ainsi que de <b>gérer les besoins</b> du client. Nous utilisions une <b>méthodologie AGILE</b> tout au long du développement du projet, ainsi que les technologies suivantes : <b>Javascript et DNN, C# et Microsoft Azure</b>."
         },
         "SWIM": {
           "TITLE": "Swiming Australia",
-          "CONTENT": "J'ai ensuite rejoins une équipe de développement frontend pour concevoir un réseau social / site web pour l'association des nageurs australiens, en utilisant les technologies suivantes : Angular 6, C#."
+          "CONTENT": "J'ai ensuite rejoins une <b>équipe de développement frontend</b> pour travailler sur une application Web complexe. Les objéctifs étaient de <b>développer et maintenir un  résau social sur-mesure </b>pour l'association des nageurs australiens, en utilisant les technologies suivantes : <b>Angular 6, C# .NET, SQL Server</b>."
         },
         "BA365": {
           "TITLE": "BA365",
-          "CONTENT": "Ma dernière mission fut de développer un site web et une application mobile sur mesure pour une entreprise de sécurité. Cette expérience m'a permis de solidifier mes compétence en développement mobile en utilisant le framework nativescript qui permet de traduire un site web vers une application native Android et IOS. J'ai aussi pris en charge la partie R&D du projet qui consistait a mettre en place des beacons (capteurs) en relation avec l'application mobile pour détecter les mouvement du personnel de l'entreprise cliente. Ce développement c'est déroulé au sein d'une équipe de 5 développeurs en utilisant une méthodologie AGILE."
+          "CONTENT": "Ma dernière mission fut de <b>développer un site web et une application mobile sur-mesure</b> pour une entreprise de sécurité. J'ai proposé de répondre à la problématique en utilisant le <b>framework Nativescript</b> qui permet de développer un <b>site Web Angular</b> et une <b>application native Android et IOS</b> à partir du <b>même code</b>. J'ai aussi pris en charge le <b>pôle R&D</b> du projet qui consistait à mettre en place des <b>beacons (capteurs)</b> en relation avec l'application mobile pour <b>détecter les mouvement</b> du personnel de l'entreprise cliente. Ce développement c'est déroulé au sein d'une équipe de plusieurs développeurs en utilisant une <b>méthodologie AGILE</b> et les technologies suivantes: <b>Angular 6+, Nativescript, C3 .NET, Estimote</b>."
         }
       }
     },
     "PERNOD": {
       "TITLE": "Solution Expert",
-      "LEAD": "After my part-time training, Pernod-Ricard proposed a mission during 2 month. The purpose of the mission was to integrate a Java application from Pernod-Ricard Canada in the production environnement of Martell France. My job was to translate, integrate and adapt the application in the existant environnement and also to train users and futur developers.",
+      "LEAD": "Pernod-Ricard est le co-leader mondial des vins et spiritueux et par conséquant il possède de nombreuses problématiques logicielles. Pendant 2 ans en alternance, j'ai participé à la réalistion de solutions logicielles au sein d'une équipe dynamique et ambitieuse.",
       "FIRST": {
         "TITLE": "Première mission (2014)",
-        "CONTENT": "Management and development of Google Glass Application</b> within the innovation hub of the company. The goal was to propose and create useful apps for the company activity with Google Glass."
+        "CONTENT": "Analyse et développement <b>C# .Net</b> au sein du service informatique de MMPJ. <b>Décision et mise en place</b> du choix technique pour la migration des outils spécifiques du progiciel de gestion intégré de l’entreprise."
       },
       "SECOND": {
         "TITLE": "Deuxieme mission (2015)",
-        "CONTENT": "Management and development of Google Glass Application within the innovation hub of the company. The goal was to propose and create useful apps for the company activity with Google Glass."
+        "CONTENT": "<b>Direction et développement</b> d'applications <b>Google Glass</b> au sein du <b>pôle innovation</b> de Pernod-Ricard. Le but était de proposer et de créer des applications pertinentes pour l'activité de l'entreprise sur un support à la pointe de la technologie : les <b>Google Glass</b> (voir section projets)."
       }
     },
     "SOLICIS": {
       "TITLE": "Développeur JAVA/Web",
-      "LEAD": "Solicis is a young start-up located in Angoulême, France. It proposes custom-made software solutions for industries or companies, and work with an advanced technology. I worked on several missions during my part-time training at Solicis, which involved multilingual and multiplatform development, teamwork and customer relationships. I used numerous technologies like <b>Java, REST applications, dynamic website with Ajax/JQuery and Zend Framework (Php)</b>. We used the <b>AGILE method Scrum</b> to manage our projects."
+      "LEAD": "Solicis est une jeune entreprise de services informatique basée à Angôuleme. Elle propose des solutions innovantes et de pointes pour répondre aux besoins de multiples entreprises et industries. J'ai pris part à plusieurs projets lors de mon alternance chez Solicis, impliquant du developpement multilangues et multi plate-formes, du travail d'équipe et des relations clients. J'ai pu apporter et enrichir mes connaissances de diverses technologies tel que <b>Java, arcitecture REST,  Ajax/JQuery and Zend Framework (Php)</b>. Toute l'équipe de developpement travaillé en suivant les directives de la <b>méthode agile nommé Scrum</b>."
     },
     "MMPJ": {
       "TITLE": "Développeur Web",
-      "LEAD": "This was my first professional experience in software development, I was part of the IT team of Martell-Mumm-PerrierJouët, a Pernod-Ricard affiliate. I worked on the integration and development of an archive management application for the company, using <b>ASP.NET/Javascript</b> development with an <b>Oracle database"
+      "LEAD": "Mon premier stage en developpement informatique au sein de la société Martell-Mumm-Perrier-Jouët à Cognac. Intégration et développement d’une application de gestion des archives des sociétés Martell, Mumm, Perrier-Jouët utilisant les <b>tecnhologies Microsoft ASP .NET</b> et mise en place d’une <b>base de données Oracle</b>"
     }
   },
   "ABILITIES": {
