@@ -107,11 +107,45 @@
       }
   },
   "WORKS":{
-    "LEAD": "Below is a selection of projects I worked on",
+    "LEAD": "Below is a selection of recents projects I worked on",
     "ALL": "All",
     "READMORE": "Read More",
     "VIEW": "View App",
-    "GITHUB": "View Code"
+    "GITHUB": "View Code",
+    "PROJECTS":{
+      "SM":{
+        "LEAD": "The simplest and smartest metronome on the Web. <br>Installable as an app on your phone",
+        "CONTENT": "Smart Metronome is a progressive web app written with React. The purpose of this app is to provide a reliable, simple metronome for your music training sessions. The challenge was to create a timing precision using javascript running in a browser, to do that I implemented Web Workers to perform multi-threading and the javascript Web Audio API for precise timing."
+      },
+      "BLOG":{
+        "LEAD": "Creation of a blog on the Web using the MEAN Stack (Mongo, Express, Angular, Node)",
+        "CONTENT": "Mean Stack Blog is a responsive online blog I created for my website. I used the MEAN stack which is a group of cutting edge tools used to develop a fully reliable, securised, maintainable, elegant Web application. Only one programming language is used for the whole application : Javascript, a considerable advnatage ensuring consistency and understanding of the code."
+      },
+      "TEMTEM":{
+        "LEAD": "A Web application for Temtem strategies, in progress ",
+        "CONTENT": "After I played the game Temtem, I decided to develop a website to help players preparing strategies for the game. Also, it was the occasion for me to increase my skills with React and Redux. Still in progress, I use a React Redux frontend and a Severless Firebase infrastructure  for the backend with a firestore database."
+      },
+      "CHIRO":{
+        "LEAD": "Dynamic website for contacting, reserving and introducing a Chiropractor",
+        "CONTENT": "This dynamic website is written with the following technologies : Angular et Firebase. I am using a serverless architecture with Firebase cloud functions to process my reservetion and contact tasks. The challenge here was to synchronise the web calendar with the client's one already existing. To implement this I used Google APIs in my cloud functions to update the calednars when needed."
+      },
+      "SPACE":{
+        "LEAD": "Fun Online 3D Space Invaders game with Javascript libraries, give it a try !",
+        "CONTENT": "This game was built with the javascript 3D framework three.js, allowing us to create some polygon mesh and interact with them. This game is the result of a school project with time and technical constraint. You can play the game, check the code or watch a fun trailer about the game."
+      },
+      "GGLASS":{
+        "LEAD": "An augmented reality project with Pernod-Ricard and the Goggle Glass, a real challenge with one of the most cutting edge tool",
+        "CONTENT": "The goal was to create useful apps for the company's industry, I built two apps that can work in the warehouses and the vineyards to display information while having free hands. To develop with this device I used Java with the Android SDK that contains all the sources needed to work with the glasses. I also created a tutorial to help people to built app with Google Glass."
+      },
+      "GARO":{
+        "LEAD": "A tweet war game website played during the french rock festival Garorock",
+        "CONTENT": "This webapp was deployed during the french rock festival Garorock. The french bank Crédit Agricole asked for a tweet war game to entertain their guest at the festival. This webapp is developed with PHP and Javascript Ajax/Jquery, using the twitter API to retrieve guest's twweets"
+      },
+      "BA365":{
+        "LEAD": "A website and native IOS/Android apps for complex and futuristic challenges",
+        "CONTENT": "This project was very challenging from a technical point of view, I had to implement a website and two native apps taht works with each others real-time to process a lot of data and Estimote movements and interactions triggers. I sugested Nativescript to create all of those apps with an unique code base allowing us to ensure coherance, security for all the platforms."
+      }
+    }
   },
   "CONTACT": {
     "TITLE": "Your contact details ",

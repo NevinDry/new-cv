@@ -25,7 +25,7 @@
                 {{project.name}}
               </div>
               <div class="rounded-card-description">
-                <p>{{project.description}}</p>
+                <p [innerHtml]="project.description | translate"></p>
                 <a class="button is-warning is-rounded" (click)="selectProject(project)">{{'WORKS.READMORE' | translate}}</a>
               </div>
               <div *ngIf="selectedProject && selectedProject.name === project.name" [id]="project.name" class="rounded-card-content">
@@ -37,9 +37,9 @@
                       [alt]="project.name" />
                   </div>
                   <div class="column">
-                    <div class="columns is-multiline">
-                      <div class="column is-full">
-                        <p>{{project.content}}</p>
+                    <div class="columns is-multiline project-content-text">
+                      <div class="column  is-full">
+                        <p>{{project.content | translate}}</p>
                       </div>
                       <div class="column is-full">
                         <div class="columns">

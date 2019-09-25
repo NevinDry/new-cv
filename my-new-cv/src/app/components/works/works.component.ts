@@ -27,40 +27,45 @@ export class WorksComponent implements OnInit {
   projects = [];
 
   data = [
-  { name: "Smart Metronome", description: " vla blabla bla blzb  bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla",
-  content:"a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla ",
+  { name: "Smart Metronome", description: "WORKS.PROJECTS.SM.LEAD",
+  content:"WORKS.PROJECTS.SM.CONTENT",
    img: "smartmetro-compressor.jpg", type: "perso",
   tools: ["js-compressor.jpg", "react-compressor.png", "pwa-compressor.png", "firebase-compressor.png"]
   },
-  { name: "Mean Stack Blog", description: " vla blabla bla blzb  bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla",
-  content:"a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla ",
+  { name: "Mean Stack Blog", description: "WORKS.PROJECTS.BLOG.LEAD",
+  content:"WORKS.PROJECTS.BLOG.CONTENT",
    img: "blog-compressor.jpg", type: "perso",
   tools: ["angular-compressor.png", "boostrap-compressor.png", "express-compressor.png", "mongo-compressor.png"]
   },
-  { name: "Temtem Tools", description: " vla blabla bla blzb  bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla",
-  content:"a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla ",
+  { name: "Temtem Tools", description: "WORKS.PROJECTS.TEMTEM.LEAD",
+  content:"WORKS.PROJECTS.TEMTEM.CONTENT",
    img: "temtem-compressor.jpg", type: "perso",
   tools: ["react-compressor.png", "materialui-compressor.png", "firebase-compressor.png", "firestore-compressor.png"]
   },
-  { name: "Chiropracteur", description: " vla blabla bla blzb  bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla",
-  content:"a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla ",
+  { name: "Chiropracteur", description: "WORKS.PROJECTS.CHIRO.LEAD",
+  content:"WORKS.PROJECTS.CHIRO.CONTENT",
    img: "ifec-compressor.png", type: "perso",
    tools: ["angular-compressor.png", "bulma-compressor.png", "firebase-compressor.png"]
   },
-  { name: "Space Invaders 3D", description: " vla blabla bla blzb  bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla",
-  content:"a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla ",
+  { name: "Space Invaders 3D", description: "WORKS.PROJECTS.SPACE.LEAD",
+  content:"WORKS.PROJECTS.SPACE.CONTENT",
    img: "space-compressor.jpg", type: "perso",
    tools: ["js-compressor.jpg", "threejs-compressor.png", "php-compressor.png"]
   },
-  { name: "Google Glass", description: " vla blabla bla blzb  bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla",
-  content:"a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla ",
+  { name: "Google Glass", description: "WORKS.PROJECTS.GGLASS.LEAD",
+  content:"WORKS.PROJECTS.GGLASS.CONTENT",
    img: "gglass-compressor.jpg", type: "pro",
    tools: ["java-compressor.png", "iosand-compressor.png"]
   },
-  { name: "BA365 App", description: " vla blabla bla blzb  bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla blabla bla blzbla vlavlalvla vla",
-  content:"a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavlaa bla blzb  bla blzbla vlavla a bla blzb  bla blzbla vlavla ",
+  { name: "BA365 App", description: "WORKS.PROJECTS.BA365.LEAD",
+  content: "WORKS.PROJECTS.BA365.CONTENT",
    img: "ba365-compressor.jpg", type: "pro",
    tools: ["angular-compressor.png", "tns-compressor.png", "iosand-compressor.png", "estimote-compressor.png"]
+  },
+  { name: "Garorock tweet war", description: "WORKS.PROJECTS.GARO.LEAD",
+  content:"WORKS.PROJECTS.GARO.CONTENT",
+   img: "garorock-compressor.jpg", type: "pro",
+   tools: ["php-compressor.png", "js-compressor.jpg", "htmlcss-compressor.png","boostrap-compressor.png"]
   },
 ];
 
