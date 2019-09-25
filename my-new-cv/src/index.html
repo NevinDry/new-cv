@@ -11,15 +11,38 @@
   <link rel="icon" type="image/x-icon" href="favicon.png">
   <link rel="manifest" href="manifest.webmanifest">
   <meta name="theme-color" content="#1976d2">
-  <meta name="description"
-    content="Etienne Puissant, Full-Stack developer, cv profile en ligne" />
-  <meta name="keywords"
-    content="etienne, puissant, cv, online, profile, development, full, stack" />
+  <meta name="description" content="Etienne Puissant, Full-Stack developer, cv profile en ligne" />
+  <meta name="keywords" content="etienne, puissant, cv, online, profile, development, full, stack" />
+
+  <style type="text/css">
+    body {
+      overflow: hidden;
+      background-color: beige;
+    }
+
+    marquee {
+      display: block;
+    }
+
+    marquee.outer-marquee {
+      height: 100vh;
+      width: 100%;
+      margin: 0;
+    }
+
+  </style>
 
 </head>
 
 <body ontouchstart="">
-  <app-root></app-root>
+
+  <app-root>
+    <marquee class="outer-marquee" direction="down" behavior="alternate">
+      <marquee class="inner-marquee" behavior="alternate">
+        <img src="./assets/splashscreen-compressor.png" alt="loader" />
+      </marquee>
+    </marquee>
+  </app-root>
   <noscript>Please enable JavaScript to continue using this application.</noscript>
 </body>
 
