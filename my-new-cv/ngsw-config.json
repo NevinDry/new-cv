@@ -3,7 +3,7 @@
   "index": "/index.html",
   "assetGroups": [
     {
-      "name": "app",
+      "name": "my-new-cv",
       "installMode": "prefetch",
       "resources": {
         "files": [
