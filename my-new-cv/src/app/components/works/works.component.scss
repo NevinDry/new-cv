@@ -22,6 +22,7 @@
 
 .works .column {
   display: flex;
+  flex-basis: inherit;
   justify-content: center;
   background: white;
 }

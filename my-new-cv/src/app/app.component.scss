@@ -24,7 +24,7 @@
     .inner-marquee {
       width: 200px;
       position: absolute;
-      animation: marqueeLeftRight 5s linear alternate infinite,  marqueeTopBot 3s linear alternate infinite;
+      animation: marqueeLeftRight 5s linear alternate infinite, marqueeTopBot 3s linear alternate infinite;
     }
   }
 }
@@ -40,11 +40,41 @@
 }
 
 @keyframes marqueeLeftRight {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: calc(100% - 200px);
+  }
+}
+
+
+
+
+// EDGE DOESNT SUPPORT CACL() IN ANIMATION (lol) https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/105834/
+@supports (-ms-ime-align:auto) {
+  .inner-marquee {
+    animation: marqueeLeftRightForEdge 5s linear alternate infinite, marqueeTopBotForEdge 3s linear alternate infinite !important;
+  }
+}
+
+@keyframes marqueeTopBotForEdge {
+    0% {
+      top: 0;
+    }
+  
+    100% {
+      top: 80%;
+    }
+  }
+  
+  @keyframes marqueeLeftRightForEdge {
     0% {
       left: 0;
     }
   
     100% {
-      left: calc(100% - 200px);
+      left: 80%;
     }
   }
