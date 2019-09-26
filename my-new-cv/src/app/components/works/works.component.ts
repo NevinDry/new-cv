@@ -64,7 +64,7 @@ export class WorksComponent implements OnInit {
       content: "WORKS.PROJECTS.TEMTEM.CONTENT",
       buttons: [
         {
-          link: "https://github.com/NevinDry/temtemtools",
+          link: "https://github.com/NevinDry/temtemtools/tree/develop",
           type: "github"
         }
       ],
