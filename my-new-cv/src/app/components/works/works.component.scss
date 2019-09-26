@@ -43,6 +43,14 @@
   transition: all 0.5s ease;
 }
 
+// I dont know why but the border bottom radius does not work on mozzila, so I have to put this hack to make it work constitently on firefox
+@-moz-document url-prefix() {
+  .works .rounded-card {
+    border-radius: 0 !important;
+  }
+}
+
+
 .works .project-container:hover:not(.project-selected) .rounded-card{
   border-bottom: solid 270px #00d1b2;
   transition: all 0.5s ease;

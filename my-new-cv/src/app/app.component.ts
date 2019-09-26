@@ -15,7 +15,6 @@ export class AppComponent {
   constructor() {
     this.setTimeout();
     this.userInactive.subscribe(() => { 
-      console.log('user has been inactive for 3s');
       this.isInactive = true;
    });
   }
@@ -24,7 +23,13 @@ export class AppComponent {
     this.userActivity = setTimeout(() => this.userInactive.next(undefined), 30000);
   }
 
-  @HostListener('window:mousemove') refreshUserState() {
+  @HostListener('window:mousemove') onMouse() {
+    clearTimeout(this.userActivity);
+    this.isInactive = false;
+    this.setTimeout();
+  }
+
+  @HostListener('window:scroll') onScroll() {
     clearTimeout(this.userActivity);
     this.isInactive = false;
     this.setTimeout();

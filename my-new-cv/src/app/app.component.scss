@@ -1,10 +1,21 @@
-.save-screen{
-    position: absolute;
-    width: 100%;
-    top: 0;
+@import '../styles/variables';
+
+
+.save-screen {
+  width: 100%;
+  top: 0;
+  height: 100%;
+  left: 0;
+  z-index: 1000000;
+  position: fixed;
+  background-color: hsla(0, 0%, 5%, 0.6588235294117647);
+  .outer-marquee {
     height: 100%;
-    left: 0;
-    z-index: 1000000;
-    position: fixed;
-    background-color: #0c0c0ca8;
+    width: 100%;
+    img {
+      border: 2px solid $colorSecondary;
+      border-radius: 1000px;
+      background-color: $colorSecondary;
+    }
+  }
 }
