@@ -19,22 +19,24 @@
         <ng-container *ngFor="let project of projects;let i = index">
           <div
             [ngClass]="selectedProject && selectedProject.name === project.name ? 'is-full project-selected' : 'is-full-mobile is-half-tablet is-half-desktop is-half-widescreen is-one-third-fullhd'"
-            class="column project-container" onClick="return true" @fadeIn [style.order]="selectedProject && selectedProject.name === project.name ? i-3 : i">
+            class="column project-container" onClick="return true" @fadeIn
+            [style.order]="selectedProject && selectedProject.name === project.name ? i-3 : i">
             <div class="rounded-card" [style.backgroundImage]="'url(../../../assets/projects/' + project.img +')'">
               <div class="rounded-card-title">
                 {{project.name}}
               </div>
               <div class="rounded-card-description">
                 <p [innerHtml]="project.description | translate"></p>
-                <a class="button is-warning is-rounded" (click)="selectProject(project)">{{'WORKS.READMORE' | translate}}</a>
+                <a class="button is-warning is-rounded"
+                  (click)="selectProject(project)">{{'WORKS.READMORE' | translate}}</a>
               </div>
-              <div *ngIf="selectedProject && selectedProject.name === project.name" [id]="project.name" class="rounded-card-content">
+              <div *ngIf="selectedProject && selectedProject.name === project.name" [id]="project.name"
+                class="rounded-card-content">
                 <a class="selected-project-close" (click)="selectedProject = null"><i class="fa fa-times"></i></a>
                 <div class="columns">
 
                   <div class="column is-one-third project-content-image">
-                    <img  [src]="'../../../assets/projects/' + project.img "
-                      [alt]="project.name" />
+                    <img [src]="'../../../assets/projects/' + project.img " [alt]="project.name" />
                   </div>
                   <div class="column">
                     <div class="columns is-multiline project-content-text">
@@ -44,8 +46,7 @@
                       <div class="column is-full">
                         <div class="columns">
                           <div *ngFor="let tool of project.tools" class="column">
-                              <img class="project-content-tool" [src]="'../../../assets/brands/' + tool "
-                              [alt]="tool" />
+                            <img class="project-content-tool" [src]="'../../../assets/brands/' + tool " [alt]="tool" />
                           </div>
                         </div>
                       </div>
@@ -54,13 +55,18 @@
                 </div>
 
                 <div class="project-selected-actions">
-                  <a class="button is-link is-rounded m-r-md">{{'WORKS.VIEW' | translate}}</a>
-                  <a class="button is-rounded">
-                    <span class="icon">
-                      <i class="fa fa-github"></i>
-                    </span>
-                    <span>{{'WORKS.GITHUB' | translate}}</span>
-                  </a>
+                  <ng-container *ngFor="let button of project.buttons">
+                    <a *ngIf="button.type === 'classic'" class="button is-link is-rounded m-r-md" target="_blank" [href]="button.link">
+                      <span>{{'WORKS.VIEW' | translate}}</span>
+                    </a>
+                    <a *ngIf="button.type === 'github'" class="button is-rounded" target="_blank" [href]="button.link">
+                      <span class="icon">
+                        <i class="fa fa-github"></i>
+                      </span>
+                      <span>{{'WORKS.GITHUB' | translate}}</span>
+                    </a>
+                  </ng-container>
+
                 </div>
               </div>
             </div>

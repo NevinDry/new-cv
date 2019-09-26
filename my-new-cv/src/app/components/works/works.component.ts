@@ -27,51 +27,107 @@ export class WorksComponent implements OnInit {
   projects = [];
 
   data = [
-  { name: "Smart Metronome", description: "WORKS.PROJECTS.SM.LEAD",
-  content:"WORKS.PROJECTS.SM.CONTENT",
-   img: "smartmetro-compressor.jpg", type: "perso",
-  tools: ["js-compressor.jpg", "react-compressor.png", "pwa-compressor.png", "firebase-compressor.png"]
-  },
-  { name: "Mean Stack Blog", description: "WORKS.PROJECTS.BLOG.LEAD",
-  content:"WORKS.PROJECTS.BLOG.CONTENT",
-   img: "blog-compressor.jpg", type: "perso",
-  tools: ["angular-compressor.png", "boostrap-compressor.png", "express-compressor.png", "mongo-compressor.png"]
-  },
-  { name: "Temtem Tools", description: "WORKS.PROJECTS.TEMTEM.LEAD",
-  content:"WORKS.PROJECTS.TEMTEM.CONTENT",
-   img: "temtem-compressor.jpg", type: "perso",
-  tools: ["react-compressor.png", "materialui-compressor.png", "firebase-compressor.png", "firestore-compressor.png"]
-  },
-  { name: "Chiropracteur", description: "WORKS.PROJECTS.CHIRO.LEAD",
-  content:"WORKS.PROJECTS.CHIRO.CONTENT",
-   img: "ifec-compressor.png", type: "perso",
-   tools: ["angular-compressor.png", "bulma-compressor.png", "firebase-compressor.png"]
-  },
-  { name: "Space Invaders 3D", description: "WORKS.PROJECTS.SPACE.LEAD",
-  content:"WORKS.PROJECTS.SPACE.CONTENT",
-   img: "space-compressor.jpg", type: "perso",
-   tools: ["js-compressor.jpg", "threejs-compressor.png", "php-compressor.png"]
-  },
-  { name: "Google Glass", description: "WORKS.PROJECTS.GGLASS.LEAD",
-  content:"WORKS.PROJECTS.GGLASS.CONTENT",
-   img: "gglass-compressor.jpg", type: "pro",
-   tools: ["java-compressor.png", "iosand-compressor.png"]
-  },
-  { name: "BA365 App", description: "WORKS.PROJECTS.BA365.LEAD",
-  content: "WORKS.PROJECTS.BA365.CONTENT",
-   img: "ba365-compressor.jpg", type: "pro",
-   tools: ["angular-compressor.png", "tns-compressor.png", "iosand-compressor.png", "estimote-compressor.png"]
-  },
-  { name: "Garorock tweet war", description: "WORKS.PROJECTS.GARO.LEAD",
-  content:"WORKS.PROJECTS.GARO.CONTENT",
-   img: "garorock-compressor.jpg", type: "pro",
-   tools: ["php-compressor.png", "js-compressor.jpg", "htmlcss-compressor.png","boostrap-compressor.png"]
-  },
-];
+    {
+      name: "Smart Metronome", description: "WORKS.PROJECTS.SM.LEAD",
+      buttons: [
+        {
+          link: "https://smart-metronome.etiennepuissant.eu/",
+          type: "classic"
+        },
+        {
+          link: "https://github.com/NevinDry/smart-metronome",
+          type: "github"
+        }
+      ],
+      content: "WORKS.PROJECTS.SM.CONTENT",
+      img: "smartmetro-compressor.jpg", type: "perso",
+      tools: ["js-compressor.jpg", "react-compressor.png", "pwa-compressor.png", "firebase-compressor.png"]
+    },
+    {
+      name: "Mean Stack Blog", description: "WORKS.PROJECTS.BLOG.LEAD",
+      content: "WORKS.PROJECTS.BLOG.CONTENT",
+      buttons: [
+        {
+          link: "https://mean-stack-blog.etiennepuissant.eu",
+          type: "classic"
+        },
+        {
+          link: "https://github.com/NevinDry/mean-stack-blog",
+          type: "github"
+        }
+      ],
+      img: "blog-compressor.jpg", type: "perso",
+      tools: ["angular-compressor.png", "boostrap-compressor.png", "express-compressor.png", "mongo-compressor.png"]
+    },
+    {
+      name: "Temtem Tools", description: "WORKS.PROJECTS.TEMTEM.LEAD",
+      content: "WORKS.PROJECTS.TEMTEM.CONTENT",
+      buttons: [
+        {
+          link: "https://github.com/NevinDry/temtemtools",
+          type: "github"
+        }
+      ],
+      img: "temtem-compressor.jpg", type: "perso",
+      tools: ["react-compressor.png", "materialui-compressor.png", "firebase-compressor.png", "firestore-compressor.png"]
+    },
+    {
+      name: "Chiropracteur", description: "WORKS.PROJECTS.CHIRO.LEAD",
+      content: "WORKS.PROJECTS.CHIRO.CONTENT",
+      buttons: [
+        {
+          link: "https://chiropracteur-cognac.firebaseapp.com/",
+          type: "classic"
+        }
+      ],
+      img: "ifec-compressor.png", type: "perso",
+      tools: ["angular-compressor.png", "bulma-compressor.png", "firebase-compressor.png"]
+    },
+    {
+      name: "Space Invaders 3D", description: "WORKS.PROJECTS.SPACE.LEAD",
+      content: "WORKS.PROJECTS.SPACE.CONTENT",
+      buttons: [
+        {
+          link: "http://spaceinvaders3d.etiennepuissant.eu/",
+          type: "classic"
+        },
+        {
+          link: "https://github.com/NevinDry/spaceInvaders3D",
+          type: "github"
+        }
+      ],
+      img: "space-compressor.jpg", type: "perso",
+      tools: ["js-compressor.jpg", "threejs-compressor.png", "php-compressor.png"]
+    },
+    {
+      name: "Google Glass", description: "WORKS.PROJECTS.GGLASS.LEAD",
+      content: "WORKS.PROJECTS.GGLASS.CONTENT",
+      img: "gglass-compressor.jpg", type: "pro",
+      tools: ["java-compressor.png", "iosand-compressor.png"]
+    },
+    {
+      name: "BA365 App", description: "WORKS.PROJECTS.BA365.LEAD",
+      content: "WORKS.PROJECTS.BA365.CONTENT",
+      img: "ba365-compressor.jpg", type: "pro",
+      tools: ["angular-compressor.png", "tns-compressor.png", "iosand-compressor.png", "estimote-compressor.png"]
+    },
+    {
+      name: "Garorock tweet war", description: "WORKS.PROJECTS.GARO.LEAD",
+      content: "WORKS.PROJECTS.GARO.CONTENT",
+      buttons: [
+        {
+          link: "https://github.com/NevinDry/garorockVIP",
+          type: "github"
+        }
+      ],
+      img: "garorock-compressor.jpg", type: "pro",
+      tools: ["php-compressor.png", "js-compressor.jpg", "htmlcss-compressor.png", "boostrap-compressor.png"]
+    },
+  ];
 
 
   animate = false;
-  selectedProject: any= null;
+  selectedProject: any = null;
 
   constructor(private scrollService: ScrollService, private _scrollToService: ScrollToService) { }
 
@@ -95,7 +151,7 @@ export class WorksComponent implements OnInit {
     }
   }
 
-  selectProject(project){
+  selectProject(project) {
     this.selectedProject = project;
 
   }
