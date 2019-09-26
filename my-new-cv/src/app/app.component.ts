@@ -14,9 +14,20 @@ export class AppComponent {
 
   constructor() {
     this.setTimeout();
-    this.userInactive.subscribe(() => { 
+    this.userInactive.subscribe(() => {
       this.isInactive = true;
-   });
+    });
+
+
+    console.log(`%c 
+     ______________
+   <  Bienvenue !!  >
+     -------------
+           \\   ^__^
+            \\  (oo)\\_______
+               (__)\\       )\\/\\
+                   ||----w |
+                   ||     ||`, "font-family:monospace");
   }
 
   setTimeout() {
