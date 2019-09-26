@@ -56,14 +56,33 @@
       background-color: beige;
     }
 
-    marquee {
-      display: block;
+    .splah-container {
+      height: 100vh;
+      width: 100vh;
     }
 
-    marquee.outer-marquee {
-      height: 100vh;
-      width: 100%;
-      margin: 0;
+    @keyframes jump {
+      0% {
+        transform: scale(1);
+        box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+      }
+
+      100% {
+        transform: scale(1.05);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, .1);
+      }
+    }
+
+    .jump {
+      border-radius: 1000px; 
+      transform-origin: 50% 50%;
+      animation: jump 0.6s linear alternate infinite;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
     }
 
   </style>
@@ -73,11 +92,9 @@
 <body ontouchstart="">
 
   <app-root>
-    <marquee class="outer-marquee" direction="down" behavior="alternate">
-      <marquee class="inner-marquee" behavior="alternate">
-        <img src="./assets/splashscreen-compressor.png" alt="loader" />
-      </marquee>
-    </marquee>
+    <div class="splah-container">
+      <img class="jump" src="./assets/splashscreen-compressor.png" alt="loader" />
+    </div>
   </app-root>
   <noscript>Please enable JavaScript to continue using this application.</noscript>
 </body>

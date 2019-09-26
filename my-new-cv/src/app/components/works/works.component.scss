@@ -118,8 +118,9 @@
     background: none;
   }
   .project-content-image img {
-    width: 75%;
+    object-fit: cover;
     border-radius: 50px;
+    border: solid 7px hsl(48, 100%, 67%);
   }
   
 }

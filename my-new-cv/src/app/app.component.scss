@@ -1,0 +1,10 @@
+.save-screen{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    left: 0;
+    z-index: 1000000;
+    position: fixed;
+    background-color: #0c0c0ca8;
+}

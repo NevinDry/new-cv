@@ -1,4 +1,12 @@
-
 <app-navbar></app-navbar>
 <router-outlet></router-outlet>
 <app-footer></app-footer>
+
+<div *ngIf="isInactive" class="save-screen">*
+    <marquee  class="outer-marquee" direction="down" behavior="alternate">
+        <marquee class="inner-marquee" behavior="alternate">
+          <img src="./assets/splashscreen-compressor.png" alt="loader" />
+        </marquee>
+      </marquee>
+</div>
+
