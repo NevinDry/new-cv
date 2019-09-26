@@ -5,7 +5,8 @@
     "EXP": "Experiences",
     "ABILITIES": "Abilities",
     "WORK": "Works",
-    "CONTACT": "Contact"
+    "CONTACT": "Contact",
+    "INTEREST": "Interests"
 
   },
   "FOOTER": {
@@ -146,6 +147,9 @@
         "CONTENT": "This project was very challenging from a technical point of view, I had to implement a website and two native apps taht works with each others real-time to process a lot of data and Estimote movements and interactions triggers. I sugested Nativescript to create all of those apps with an unique code base allowing us to ensure coherance, security for all the platforms."
       }
     }
+  },
+  "INTEREST": {
+
   },
   "CONTACT": {
     "TITLE": "Your contact details ",

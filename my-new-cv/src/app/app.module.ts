@@ -24,6 +24,7 @@ import { WorksComponent } from './components/works/works.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { DetailsComponent } from './components/details/details.component';
+import { InterestComponent } from './components/interest/interest.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -41,7 +42,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     WorksComponent,
     ContactComponent,
     FooterComponent,
-    DetailsComponent
+    DetailsComponent,
+    InterestComponent
   ],
   imports: [
     BrowserModule,
