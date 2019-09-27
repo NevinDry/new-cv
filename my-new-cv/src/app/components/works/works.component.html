@@ -43,10 +43,10 @@
                       <div class="column  is-full">
                         <p>{{project.content | translate}}</p>
                       </div>
-                      <div class="column is-full">
-                        <div class="columns">
+                      <div class="column is-full project-content-tool">
+                        <div class="columns is-mobile">
                           <div *ngFor="let tool of project.tools" class="column">
-                            <img class="project-content-tool" [src]="'../../../assets/brands/' + tool " [alt]="tool" />
+                            <img class="" [src]="'../../../assets/brands/' + tool " [alt]="tool" />
                           </div>
                         </div>
                       </div>

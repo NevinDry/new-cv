@@ -52,7 +52,7 @@
 }
 
 
-.works .project-container:hover:not(.project-selected) .rounded-card{
+.works .project-container:hover:not(.project-selected) .rounded-card {
   border-bottom: solid 270px #00d1b2;
   transition: all 0.5s ease;
 
@@ -84,7 +84,8 @@
   animation-delay: 0.5s;
   opacity: 0;
   height: 180px;
-  p{
+
+  p {
     font-size: 1rem;
     height: 140px;
     display: table-cell;
@@ -126,12 +127,13 @@
 
     background: none;
   }
+
   .project-content-image img {
     object-fit: cover;
     border-radius: 50px;
     border: solid 7px hsl(48, 100%, 67%);
   }
-  
+
 }
 
 .rounded-card .is-warning {
@@ -140,10 +142,10 @@
 }
 
 .works .project-selected {
-   justify-content: left;
+  justify-content: left;
 
   .rounded-card {
-    border-bottom: solid 400px #00d1b2 ;
+    border-bottom: solid 400px #00d1b2;
     border-radius: 0;
     width: 100%;
   }
@@ -162,12 +164,19 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 501px) {
+  .works .project-selected .project-content-text {
+    p {
+      font-size: 0.7rem;
+    }
+  }
+
   .rounded-card-content {
     .project-content-tool {
       display: none;
     }
-    .project-content-image{
+
+    .project-content-image {
       display: none;
     }
   }
@@ -183,13 +192,16 @@
   }
 }
 
-@media  (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 502px) and (max-width: 767px) {
   .rounded-card-content {
     .project-content-tool {
       display: block;
-      height: 70px;
+      img{
+        height: 40px;
+
+      }
     }
-    .project-content-image{
+    .project-content-image {
       display: none;
     }
   }
@@ -206,13 +218,41 @@
   }
 }
 
- 
-@media  (min-width: 1024px) and (max-width: 1216px) {
+@media (min-width: 768px) and (max-width: 1023px) {
+  .rounded-card-content {
+    .project-content-tool {
+      display: block;
+      img{
+        height: 70px;
+
+      }
+    }
+
+    .project-content-image {
+      display: none;
+    }
+  }
+
+  .works:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom: 80px solid transparent;
+    border-right: 150px solid beige;
+    width: 0;
+    z-index: 10;
+  }
+}
+
+
+@media (min-width: 1024px) and (max-width: 1216px) {
   .rounded-card-content {
     .project-content-tool {
       display: none;
     }
-    .project-content-image{
+
+    .project-content-image {
       display: none;
     }
   }
@@ -222,9 +262,12 @@
   .rounded-card-content {
     .project-content-tool {
       display: block;
-      height: 70px;
+      img{
+        height: 70px;
+      }
     }
-    .project-content-image{
+
+    .project-content-image {
       display: none;
     }
   }
@@ -233,27 +276,33 @@
 @media (min-width: 1407px) and (max-width: 1700px) {
   .rounded-card-content {
     .project-content-tool {
-      height: 45px;
+      img{
+        height: 45px;
+        
+      }
     }
+
     .project-content-image img {
       height: 75%;
     }
   }
-  .project-content-text{
+
+  .project-content-text {
     padding-right: 30px;
   }
 }
 
 @media (min-width: 1700px) {
 
-  .project-content-text{
+  .project-content-text {
     padding-right: 30px;
   }
 
   .works .rounded-card-description {
     bottom: -280px;
     height: 220px;
-    p{
+
+    p {
       height: 180px;
     }
   }
@@ -271,7 +320,10 @@
 
 
   .project-content-tool {
-    height: 75px;
+    img{
+      height: 75px;
+      
+    }
   }
 
 }
