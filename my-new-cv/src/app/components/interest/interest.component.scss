@@ -15,40 +15,38 @@
 .interest {
   .container {
     .first {
-      border-left: solid 10px #00d1b2;
-      border-bottom: solid 10px #00d1b2;
+      border-left: solid 4px #00d1b2;
+      border-bottom: solid 4px #00d1b2;
       border-top-left-radius: 50px;
-      border-bottom-right-radius: 50px;
-      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 20px;
 
-      .music {
-        text-align: center;
-        width: 100%;
 
-        img:first-child {
+        img {
+          box-shadow: 4px 4px 6px #aaa;
           width: 375px;
-          border-top-left-radius: 50px;
-          border-top-right-radius: 50px;
+
         }
       }
-    }
+    
 
     .second {
       text-align: right;
       margin-top: 20px;
-      border-right: solid 10px #ffdd57;
-      border-bottom: solid 10px #ffdd57;
+      border-right: solid 4px #ffdd57;
+      border-bottom: solid 4px #ffdd57;
       border-top-right-radius: 50px;
       border-bottom-right-radius: 25px;
       border-bottom-left-radius: 25px;
 
-      img {
-        border-radius: 10px;
+      &>.columns{
+        margin-bottom: 10px;
+      }
+      img{
         max-height: 310px;
-        width: 100%;
+        width: 90%;
         object-fit: cover;
-        border-radius: 10px;
         border: solid 5px #00d1b2;
+        box-shadow: 4px 4px 6px #aaa;       
       }
 
       p{
@@ -65,6 +63,20 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .second span{
+    text-align: center;
+  }
+
+  .first .column:first-child{
+    text-align: center;
+    span{
+      padding: 0;
+    }
+  }
+}
+
 
 @media (max-width: 1024px) {
 
