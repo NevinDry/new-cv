@@ -19,7 +19,7 @@
         <ng-container *ngFor="let project of projects;let i = index">
           <div
             [ngClass]="selectedProject && selectedProject.name === project.name ? 'is-full project-selected' : 'is-full-mobile is-half-tablet is-half-desktop is-half-widescreen is-one-third-fullhd'"
-            class="column project-container" onClick="return true" @fadeIn
+            class="column project-container" @fadeIn
             [style.order]="selectedProject && selectedProject.name === project.name ? i-3 : i">
             <div class="rounded-card" [style.backgroundImage]="'url(../../../assets/projects/' + project.img +')'">
               <div class="rounded-card-title">
@@ -27,8 +27,10 @@
               </div>
               <div class="rounded-card-description">
                 <p [innerHtml]="project.description | translate"></p>
-                <a class="button is-warning is-rounded"
+                <div>
+                  <a class="button is-warning is-rounded"
                   (click)="selectProject(project)">{{'WORKS.READMORE' | translate}}</a>
+                </div>
               </div>
               <div *ngIf="selectedProject && selectedProject.name === project.name" [id]="project.name"
                 class="rounded-card-content">

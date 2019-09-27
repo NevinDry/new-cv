@@ -35,61 +35,74 @@
   width: 280px;
   margin: 10px;
   border: solid 10px $colorMain;
-  border-radius: 200px;
+  // border-radius: 200px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   border-bottom: solid 90px #00d1b2;
   transition: all 0.5s ease;
-}
 
-// I dont know why but the border bottom radius does not work on mozzila, so I have to put this hack to make it work constitently on firefox
-@-moz-document url-prefix() {
-  .works .rounded-card {
-    border-radius: 0 !important;
+  .rounded-card-content {
+    display: none;
+  }
+
+  .rounded-card-title {
+    text-align: center;
+    position: absolute;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    margin-top: 210px;
+    width: 100%;
+    transition: all 0.5s ease;
+  }
+
+  .rounded-card-description {
+    text-align: center;
+    top: 55px;
+    position: absolute;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: white;
+    animation-delay: 0.5s;
+    opacity: 0;
+    height: 215px;
+
+    p {
+      font-size: 1rem;
+      height: 140px;
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    div {
+      bottom: 15px;
+      position: absolute;
+      width: 100%;
+    }
+
   }
 }
 
 
-.works .project-container:hover:not(.project-selected) .rounded-card {
-  border-bottom: solid 270px #00d1b2;
-  transition: all 0.5s ease;
 
+// I dont know why but the border bottom radius does not work on mozzila, so I have to put this hack to make it work constitently on firefox
+// @-moz-document url-prefix() {
+//   .works .rounded-card {
+//     border-radius: 0 !important;
+//   }
+// }
+
+// .works .project-container:hover:not(.project-selected) .rounded-card {
+.works .rounded-card:hover {
+  border-bottom: solid 270px #00d1b2;
+  .rounded-card-title {
+    margin-top: 5px;
+  }
   .rounded-card-description {
     opacity: 0;
     animation: 0.5s linear 0.1s forwards delayedShow;
-  }
-}
-
-.works .rounded-card-title {
-  text-align: center;
-  position: absolute;
-  font-size: 1.3rem;
-  font-weight: bold;
-  bottom: -50px;
-  color: white;
-  width: 100%;
-}
-
-.works .rounded-card-description {
-  display: block;
-  text-align: center;
-  bottom: -240px;
-  position: absolute;
-  font-size: 0.9rem;
-  font-weight: bold;
-  color: white;
-  width: 100%;
-  animation-delay: 0.5s;
-  opacity: 0;
-  height: 180px;
-
-  p {
-    font-size: 1rem;
-    height: 140px;
-    display: table-cell;
-    vertical-align: middle;
   }
 }
 
@@ -99,68 +112,63 @@
   }
 }
 
-.rounded-card-content {
-  opacity: 0;
-  text-align: center;
-  height: 400px;
-  padding: 60px 10px 5px 10px;
-  position: relative;
-  color: black;
-  animation: 0.5s linear 0.1s forwards delayedShow;
-  animation-delay: 0.35s;
-
-  .selected-project-close {
-    top: 0;
-    right: 10px;
-    position: absolute;
-    font-size: 1.5rem;
-    color: $colorDanger;
-  }
-
-  .project-selected-actions {
-    position: absolute;
-    bottom: 2%;
-    width: 100%;
-  }
-
-  .column {
-
-    background: none;
-  }
-
-  .project-content-image img {
-    object-fit: cover;
-    border-radius: 50px;
-    border: solid 7px hsl(48, 100%, 67%);
-  }
-
-}
-
-.rounded-card .is-warning {
-  background-color: $colorSecondary;
-  color: black;
-}
-
 .works .project-selected {
   justify-content: left;
 
   .rounded-card {
     border-bottom: solid 400px #00d1b2;
-    border-radius: 0;
     width: 100%;
-  }
 
-  .rounded-card-description {
-    display: none;
-  }
+    .rounded-card-title {
+      margin-top: 5px;
+    }
 
-  .project-container:hover .rounded-card .rounded-card-description {
-    opacity: 0;
-    animation: none;
-  }
+    .rounded-card-description {
+      display: none;
+    }
 
-  .rounded-card-content {
-    display: block;
+    .rounded-card-content {
+      display: block;
+      position: relative;
+      opacity: 0;
+      animation: 0.5s linear 0.1s forwards delayedShow;
+      text-align: center;
+      height: 400px;
+      padding: 60px 10px 5px 10px;
+      color: black;
+      animation-delay: 0.35s;
+
+      .selected-project-close {
+        top: 0;
+        right: 10px;
+        position: absolute;
+        font-size: 1.5rem;
+        color: $colorDanger;
+      }
+
+      .project-selected-actions {
+        position: absolute;
+        bottom: 2%;
+        width: 100%;
+      }
+
+      .column {
+        background: none;
+      }
+
+      .project-content-image img {
+        object-fit: cover;
+        border-radius: 50px;
+        border: solid 7px hsl(48, 100%, 67%);
+      }
+
+      .project-content-tool {
+        img {
+          height: 75px;
+
+        }
+      }
+    }
   }
 }
 
@@ -180,15 +188,10 @@
       display: none;
     }
   }
+
   .works:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
     border-bottom: 80px solid transparent;
     border-right: 150px solid beige;
-    width: 0;
-    z-index: 10;
   }
 }
 
@@ -196,25 +199,21 @@
   .rounded-card-content {
     .project-content-tool {
       display: block;
-      img{
+
+      img {
         height: 40px;
 
       }
     }
+
     .project-content-image {
       display: none;
     }
   }
 
   .works:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
     border-bottom: 80px solid transparent;
     border-right: 150px solid beige;
-    width: 0;
-    z-index: 10;
   }
 }
 
@@ -222,7 +221,8 @@
   .rounded-card-content {
     .project-content-tool {
       display: block;
-      img{
+
+      img {
         height: 70px;
 
       }
@@ -234,17 +234,10 @@
   }
 
   .works:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
     border-bottom: 80px solid transparent;
     border-right: 150px solid beige;
-    width: 0;
-    z-index: 10;
   }
 }
-
 
 @media (min-width: 1024px) and (max-width: 1216px) {
   .rounded-card-content {
@@ -262,7 +255,8 @@
   .rounded-card-content {
     .project-content-tool {
       display: block;
-      img{
+
+      img {
         height: 70px;
       }
     }
@@ -276,9 +270,9 @@
 @media (min-width: 1407px) and (max-width: 1700px) {
   .rounded-card-content {
     .project-content-tool {
-      img{
+      img {
         height: 45px;
-        
+
       }
     }
 
@@ -297,33 +291,4 @@
   .project-content-text {
     padding-right: 30px;
   }
-
-  .works .rounded-card-description {
-    bottom: -280px;
-    height: 220px;
-
-    p {
-      height: 180px;
-    }
-  }
-
-  .works .rounded-card {
-    height: 320px;
-    width: 320px;
-  }
-
-  .works .project-container:hover:not(.project-selected) .rounded-card {
-    border-bottom: solid 310px #00d1b2;
-    transition: all 0.5s ease;
-  }
-
-
-
-  .project-content-tool {
-    img{
-      height: 75px;
-      
-    }
-  }
-
 }
