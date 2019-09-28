@@ -15,15 +15,16 @@
   },
 
   "PROFILE": {
-    "LEAD": "Je suis un developpeur full-stack créatif",
+    "LEAD": "Je suis un développeur full-stack passionné à la recherche de nouveaux challenges.",
     "ABOUT": "À propos",
-    "CONTENT": "Aprés trois ans d'experience en alternance et mon diplôme d'ingénieur en poche, j'ai décidé de partir à l'étranger pour perfectionner mes connaissances techniques et relationnelles en Australie. <br> <br> De retour en France après trois ans, je suis à la recherche d'une nouvelle aventure au sein d'une équipe de développpement pour apporter mes connaissances et les enrichir. ",
+    "CONTENT": "Après trois ans d'expérience en alternance et mon diplôme d'ingénieur en poche, j'ai décidé de partir à l'étranger pour perfectionner mes connaissances techniques et relationnelles en Australie. De retour en France après trois ans, je suis à la recherche d'une nouvelle aventure au sein d'une équipe de développement pour relever de nouveaux challenges et enrichir mes connaissances.",
     "DETAILS": {
       "TITLE": "Détails",
       "NAME": "Nom",
       "PHONE": "Télephone",
       "LOCATION": "Localisation"
     },
+    "RESUMELINK": "https://drive.google.com/file/d/1JjzFUNaxKJCDnEGe9RH-hwdHQ6c8--9X/view?usp=drive_open",
     "RESUME": "CV classique"
   },
   "EDU": {
@@ -109,50 +110,60 @@
       "DESIRE": "Soif d'apprendre"
     }
   },
-  "WORKS":{
+  "WORKS": {
     "LEAD": "Voici une sélection des projets récents que j'ai réalisés",
     "ALL": "Tous",
     "READMORE": "Plus d'info",
     "VIEW": "Voir l'App",
     "GITHUB": "Voir code",
-    "PROJECTS":{
-      "SM":{
+    "PROJECTS": {
+      "SM": {
         "LEAD": "Le metronome le plus 'smart' et simple du Web. <br>Installable comme une application sur smartphone",
         "CONTENT": "Smart Metronome est une application web progressive codée avec React. Le but de cette application est de fournir un métronome fiable et simple pour des sessions d'entrainement. Le challenge technique était d'obtenir une forte précision avec javascript éxécuté sur navigateur, pour cela j'ai implémenté des Web Workers pour éfféctuer du multi-threading et la Web Audio API de javascript pour le timing de l'horloge."
       },
-      "BLOG":{
+      "BLOG": {
         "LEAD": "Création d'un blog pour le web en utilisant le MEAN Stack (Mongo, Express, Angular, Node)",
         "CONTENT": "Mean Stack Blog est un blog en ligne responvsif que j'ai développé pour mon site. J'ulitise le MEAN stack qui est un ensemble d'outils de pointe permettant de réaliser un application Web fiable, sécurisé, maintenable et élégante. Un seul langage de programmation est utilisé pour toute l'application : Javascript, un avantage non négligeable assurant la cohérance et la compréhension du code."
       },
-      "TEMTEM":{
+      "TEMTEM": {
         "LEAD": "Un site Web de stratégie pour le jeu Temtem, en cours de dev",
         "CONTENT": "C'est après avoir joué à Temtem que j'ai décider de développer un site Web pour aider les joueurs à préparer leurs stratégies. C'est aussi l'occasion pour moi de solidifier mes connaissances avec React et Redux. Actuellement en développment, j'utilise les technologies React Redux pour le frontend et infrastructure Severless Firebase pour le backend avec une base de donnée firestore."
       },
-      "CHIRO":{
+      "CHIRO": {
         "LEAD": "Site internet dynamique de présentation,  contact et reservation pour un chiropracteur",
         "CONTENT": "Ce Site internet dynamique est écrit avec les technologies Angular et Firebase. J'utilise une architecture serverless avec des cloud functions firebase pour éfféctuer mes tâches de reservation et contact. Le défi ici était de synchroniser le calendrier su site avec celui du client déja existant. Pour répondre à cette problématique j'ai utilisé les APIs google dans mes cloud functions pour mettre à jour chaque calendriers"
       },
-      "SPACE":{
+      "SPACE": {
         "LEAD": "Un jeu fun 3D Space Invaders en ligne utilisant des library 3D javascript, allez l'essayer  ! ",
         "CONTENT": "Ce jeu a été réalisé avec la library javascript 3D three.js, qui nous permet de créer des formes polygones et intéragir avec elle. Ce jeu est le résultat d'un projet scolaire comportant des contraintes de temps et d'outil. Vous pouvez jouez au jeu, jeter un oeil au code ou regarder le magnifique (ironie) trailer que nous avons créé."
       },
-      "GGLASS":{
+      "GGLASS": {
         "LEAD": "La réalité augmenté avec Pernod-Ricard et les Google Glass, un challenge avec des outils de pointe",
         "CONTENT": "L'objéctif était de protyper et développer des applications qui pourrait révolutionner certains des métiers propre à l'activité de l'entreprise. J'ai développé deux application pour aider les ouvriers à obtenir des informations dans les entrepôts et dans les vignobles grace au scan d'un code ou la géolocalisation, sans avoir à utiliser ses mains. Pour développer avec les Google Glass j'ai utilisé Java avec le Android SDK spécific fournit par Google."
       },
-      "GARO":{
+      "GARO": {
         "LEAD": "Une guerre de tweets sous la forme d'un site créée pour le festival Garorock",
         "CONTENT": "Ce site internet a été déployé pendant le festival garorock et perméttait aux invité du Crédit Agricole de comptabiliser leur tweet durant l'évenement et leur faire gagner prix en fonction de leur activité. Ce site est developpé avec PHP et Javascript Ajax/Jquery, utilisant les APIs de Twitter pour récupere les informations nécessaires"
       },
-      "BA365":{
+      "BA365": {
         "LEAD": "Un site internet et des applications smartphone native pour des problématiques métier complexes et futuristes",
         "CONTENT": "Ce projet était un vrai challenge sur le plan technique, j'ai du mettre en place un site internet ainsi que des application natives Android et Ios qui fonctionnent toutes ensembles en temps réel traitant de gros flux de données et de la détection de mouvement via capteur Estimote. En proposant Nativescript j'ai pu créer toutes ces applications avec un code unique permettant d'assurer cohérance et sécurité pour toute les plate-formes."
       }
     }
   },
+  "INTEREST": {
+    "MUSIC": {
+      "TITLE": "La musique, les concerts",
+      "CONTENT": "J'ai une profonde passion pour la musique et les concerts live. J'ai eu la chance de pouvoir assister à des représentations fabuleuse comme celle d'ACDC, Hans Zimmer ou encore les Foo Fighters recement. <br> <br> De mon coté je pratique le ukulélé avec lequel je compose et j'enregistre des chansons, mais mon activité préféré reste de jouer à plusieurs avec mes amis."
+    },
+    "TRIP": {
+      "TITLE": "L'aventure à l'étranger",
+      "CONTENT": "J'ai un fort appétit pour l'aventure, partout dans le monde. Le plus souvent avec un sac à dos et une tente, j'adore me balader pour découvrir de nouveaux paysages et cultures. <br> <br> J'ai eu la chance de voyager en Nouvelle-Zélande, Australie, Fiji, Japon, Canada, Etats-Unis et un peu partout en Europe."
+    }
+  },
   "CONTACT": {
     "TITLE": "Vos coordonnées",
-    "FORM":{
+    "FORM": {
       "NAME": "Nom",
       "ENTREPRISE": "Entreprise",
       "PHONE": "Télephone",

@@ -15,15 +15,16 @@
   },
 
   "PROFILE": {
-    "LEAD": "I am a creative Full-Stack Developer",
+    "LEAD": "I am a passionate Full Stack Developer who seeks new challenges",
     "ABOUT": "About me",
-    "CONTENT": "After three years of part-time training, I obtained my Master Degree in Software Engineering and decided to move to Australia to improve my technical and relationnal skills. <br> <br> Back home after 3 years, I am now looking for a new adventure within a development team where I can bring and increase my knowledge.",
+    "CONTENT": "After three years of part-time training, I obtained my Master Degree in Software Engineering and decided to move to Australia to improve my technical and relationnal skills. <br> <br> Back home after 3 years, I am now looking for a new adventure within a development team to face new challenges and increase my knowledge.",
     "DETAILS": {
       "TITLE": "Details",
       "NAME": "Name",
       "PHONE": "Phone",
       "LOCATION": "Location"
     },
+    "RESUMELINK": "https://drive.google.com/file/d/170m8H_R3LcfK9XFTpajwHc5E2nLzI1yL/view",
     "RESUME": "My static resume"
   },
   "EDU": {
@@ -149,7 +150,14 @@
     }
   },
   "INTEREST": {
-
+    "MUSIC":{
+      "TITLE":"Music, going to gigs",
+      "CONTENT":"I have a deep passion for music and gigs. I was fortunate to be able to attend fabulous performances such as ACDC, Hans Zimmer or the Foo Fighters. <br> <br> At home, I play the ukulele, compose and record songs, but my favorite activity is to play with my friends."
+    },
+    "TRIP":{
+      "TITLE":"Adventures overseas",
+      "CONTENT":"I have a strong appetite for adventure, all over the world. Most often with a backpack and a tent, I like to walk around to discover new landscapes and cultures. <br> <br> I had the chance to travel to New Zealand, Australia, Fiji, Japan, Canada, USA and all over Europe."
+    }
   },
   "CONTACT": {
     "TITLE": "Your contact details ",

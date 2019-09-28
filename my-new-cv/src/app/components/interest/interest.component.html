@@ -7,8 +7,7 @@
       <div class="columns is-multiline">
         <div class="column is-full">
           <span class="subtitle p-l-lg is-3">
-            <!-- {{'INTEREST.TITLE' | translate}} -->
-            La musique, les concerts
+            {{'INTEREST.MUSIC.TITLE' | translate}}
           </span>
         </div>
         <div class="column is-4">
@@ -20,12 +19,9 @@
           </div>
 
         </div>
-        <div class="column is-4">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias accusamus quam nemo minus provident.
-            Recusandae
-            possimus ipsa autem deleniti aliquam vel quia consectetur. Est distinctio modi itaque voluptatibus odit
-            labore.
+        <div class="column is-4 has-text-centered">
+          <p  [innerHTML]="'INTEREST.MUSIC.CONTENT' | translate">
+           
           </p>
         </div>
         <div class="column is-4">
@@ -33,7 +29,7 @@
             <div class="column is-full">
               <img src="../../../assets/interest/music1.jpg" alt="ukulele" />
             </div>
-            <div class="column is-full">
+            <div class="column has-text-centered is-full">
               <audio src="https://docs.google.com/uc?export=download&id=1NfWOT4XS5IgmJdBNcTwvQ5gdumi94e-v" controls>
               </audio>
 
@@ -51,20 +47,15 @@
           <div class="columns is-multiline is-vcentered music">
             <div class="column is-full">
               <span class="subtitle is-3">
-                <!-- {{'INTEREST.TITLE' | translate}} -->
-                L'aventure à l'étranger
+                {{'INTEREST.TRIP.TITLE' | translate}}
               </span>
             </div>
             <div class="column is-half">
               <img src="../../../assets/interest/edoras.JPG" alt="oz" />
             </div>
-            <div class="column is-half">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias accusamus quam nemo minus provident.
-                Recusandae
-                possimus ipsa autem deleniti aliquam vel quia consectetur. Est distinctio modi itaque voluptatibus odit
-                labore.
-              </p>
+            <div class="column is-half has-text-centered">
+              <p  [innerHTML]="'INTEREST.TRIP.CONTENT' | translate">
+
             </div>
             <div class="column is-3">
               <img src="../../../assets/interest/kangaroo.jpg" alt="nz" />

@@ -158,8 +158,8 @@
 
       .project-content-image img {
         object-fit: cover;
-        border-radius: 50px;
         border: solid 7px hsl(48, 100%, 67%);
+        box-shadow: 4px 4px 6px #aaa;
       }
 
       .project-content-tool {

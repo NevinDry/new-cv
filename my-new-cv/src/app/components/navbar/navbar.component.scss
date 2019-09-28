@@ -18,6 +18,10 @@
   top: 70px;
 }
 
+.custom-navbar.nav-fading{
+  top:0px;
+  animation: all ease 0.5s;
+}
 
 .custom-navbar ul li {
   transition: 0.2s;
