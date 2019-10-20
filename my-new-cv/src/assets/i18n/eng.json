@@ -10,7 +10,7 @@
 
   },
   "FOOTER": {
-    "MADEWITH": "Made With :",
+    "MADEWITH": "Powered by :",
     "WRITTEN": "Written by hand with multiple ideas from the web :)"
   },
 
@@ -31,11 +31,11 @@
     "EPSI": "EPSI Engineering School",
     "MASTER": {
       "TITLE": "Master Degree in Software Engineering",
-      "CONTENT": "EPSI is an engineering school estalished in 9 cities in France. It propose an engineering course with the possibility to do a part-time training during 3 years in a company. I decided to follow the <b>software engineering course</b>, where i learned to <b>manage and develop projects</b> with various technologies and methodologies. I finally worked on some more generic skills like security, finances, ludification and customers relationships. At the end of my education, I writed a <a href='https://drive.google.com/drive/u/0/folders/0B8mnVHL4jn2_SDFhcGtKNFJ1ck0'>Master Thesis</a> about the digital revolution for conventional companies."
+      "CONTENT": "EPSI is an engineering school established in 9 cities in France. It proposes an engineering course with the possibility to do a part-time training during 3 years in a company. I decided to follow the <b>software engineering course</b>, where i learned to <b>manage and develop projects</b> with various technologies and methodologies. I finally worked on some more generic skills like security, finances, ludification and customers relationships. At the end of my education, I wrote a <a href='https://drive.google.com/drive/u/0/folders/0B8mnVHL4jn2_SDFhcGtKNFJ1ck0'>Master Thesis</a> about the digital revolution for conventional companies."
     },
     "BTS": {
       "TITLE": "Technical degree in software development",
-      "CONTENT": "After obtaining my High-School Diploma, I decided to follow a generic IT formation at EPSI Bordeaux for two years, <b>preparing me to integrate an engineering school</b>. During these two years I <b>learned the basics of software developement and system network information.</b>"
+      "CONTENT": "After obtaining my High-School Diploma, I decided to follow a generic IT formation at EPSI Bordeaux for two years, <b>preparing me to integrate an engineering school</b>. During these two years I <b>learned the basics of software development and system network information.</b>"
     },
     "LANG": "Language Skills",
     "FRENCH": {
@@ -44,13 +44,13 @@
     },
     "ENGLISH": {
       "TITLE": "Fluent English",
-      "CONTENT": " - <strong>Three years of professionnal experience</strong> in a full english speaking envirronment in Australia <br> - <strong > 7.5 / 9 </strong> at the International English Language Testing System <strong>(IELTS)</strong> <br> - <strong> 915 / 990 </strong> at the Test of English for International Comunication <strong>(TOEIC)</strong > "
+      "CONTENT": " - <strong>Three years of professional experience</strong> in a full English speaking environment in Australia <br> - <strong > 7.5 / 9 </strong> at the International English Language Testing System <strong>(IELTS)</strong> <br> - <strong> 915 / 990 </strong> at the Test of English for International Communication <strong>(TOEIC)</strong > "
     }
   },
   "EXP": {
     "1ICT": {
       "TITLE": "Full Stack Developer",
-      "LEAD": "I have been part of different missions at 1ICT, one of <b>Australia’s most trusted and fastest growing</b> IT companies. During three years I took <b>a core role</b> in the development of multiple <b>Web projects</b>, inlcuding <b>creation, deployment and maintenance</b>, but also <b>scoping, quoting and project management</b>. I worked in fast paced environments that requires <b>adaptability and agility</b> to meet daily deliverables. This often requires <b>communicating with clients and other team members</b> to find solutions to complex business requirements.",
+      "LEAD": "I have been part of different missions at 1ICT, one of <b>Australia’s most trusted and fastest growing</b> IT companies. During three years I took <b>a core role</b> in the development of multiple <b>Web projects</b>, including <b>creation, deployment and maintenance</b>, but also <b>scoping, quoting and project management</b>. I worked in fast paced environments that requires <b>adaptability and agility</b> to meet daily deliverables. This often requires <b>communicating with clients and other team members</b> to find solutions to complex business requirements.",
       "MISSIONS": {
         "TITLE": "Missions description",
         "DOMINOS": {
@@ -63,20 +63,20 @@
         },
         "SWIM": {
           "TITLE": "Swiming Australia",
-          "CONTENT": "I joined a <b>frontend developpement team</b> to work on a complex Web application. The goal was to develop features for a <b>taylor-made social network</b> for the Australian Swimmers organization, using the following technologies : <b>Angular 6+, C#, .NET, SQL Server</b>."
+          "CONTENT": "I joined a <b>frontend development team</b> to work on a complex Web application. The goal was to develop features for a <b>taylor-made social network</b> for the Australian Swimmers organization, using the following technologies : <b>Angular 6+, C#, .NET, SQL Server</b>."
         },
         "BA365": {
           "TITLE": "BA365",
-          "CONTENT": "Ma last mission was to <b>develop a taylor-made website and a native mobile App </b> for a security company. I suggested to use the <b>Nativescript framework</b> that help us to develop a <b>Angular Website</b> and a <b>native Android/IOS app</b> using <b>the same code</b>. I also managed the <b>iR&D hub</b> to implement a <b>beacon</b> solution tp work with the mobile app and <b>detect the movement</b> of the security company employees. This project was drived by a team of multiple developers using an <b>AGILE methodology</b> and the following technologies: <b>Angular 6+, Nativescript, C3 .NET, Estimote</b>."
+          "CONTENT": "Ma last mission was to <b>develop a taylor-made website and a native mobile App </b> for a security company. I suggested to use the <b>Nativescript framework</b> that help us to develop a <b>Angular Website</b> and a <b>native Android/IOS app</b> using <b>the same code</b>. I also managed the <b>R&D hub</b> to implement a <b>beacon</b> solution to work with the mobile app and <b>detect the movement</b> of the security company employees. This project was driven by a team of multiple developers using an <b>AGILE methodology</b> and the following technologies: <b>Angular 6+, Nativescript, C3 .NET, Estimote</b>."
         }
       }
     },
     "PERNOD": {
       "TITLE": "Solution Expert",
-      "LEAD": "Pernod Ricard is the world's co-leader wines and spirits group and therefore it got multiples IT challenges. During two years of part-time training, I got involved in the implementation of software solutions within a dynamic and ambitous team.",
+      "LEAD": "Pernod Ricard is the world's co-leader wines and spirits group and therefore it got multiples IT challenges. During two years of part-time training, I got involved in the implementation of software solutions within a dynamic and ambitious team.",
       "FIRST": {
         "TITLE": "First mission (2014)",
-        "CONTENT": " Analyse and <b>C# .NET</b> development with the IT team of Pernod-Ricard during my part-time training. <b>Decision and implementation</b> of a technical choice to migrate the specific tools of the Enterprise Resource Planning."
+        "CONTENT": " Analysis and <b>C# .NET</b> development with the IT team of Pernod-Ricard during my part-time training. <b>Decision and implementation</b> of a technical choice to migrate the specific tools of the Enterprise Resource Planning."
       },
       "SECOND": {
         "TITLE": "Second mission (2015)",
@@ -89,7 +89,7 @@
     },
     "MMPJ": {
       "TITLE": "Web Developer",
-      "LEAD": "This was my first professional experience in software development, I was part of the IT team of Martell-Mumm-PerrierJouët, a Pernod-Ricard affiliate. I worked on the integration and development of an archive management application for the company, using <b>ASP.NET/Javascript</b> development with an <b>Oracle database"
+      "LEAD": "This was my first professional experience in software development, I was part of the IT team of Martell-Mumm-PerrierJouët, a Pernod-Ricard affiliate. I worked on the integration and development of an archive management application for the company, using <b>ASP.NET/Javascript</b> development with an <b>Oracle database."
     }
   },
   "ABILITIES": {
@@ -121,7 +121,7 @@
       },
       "BLOG":{
         "LEAD": "Creation of a blog on the Web using the MEAN Stack (Mongo, Express, Angular, Node)",
-        "CONTENT": "Mean Stack Blog is a responsive online blog I created for my website. I used the MEAN stack which is a group of cutting edge tools used to develop a fully reliable, securised, maintainable, elegant Web application. Only one programming language is used for the whole application : Javascript, a considerable advnatage ensuring consistency and understanding of the code."
+        "CONTENT": "Mean Stack Blog is a responsive online blog I created for my website. I used the MEAN stack which is a group of cutting-edge tools used to develop a fully reliable, secured, maintainable, elegant Web application. Only one programming language is used for the whole application : Javascript, a considerable advantage ensuring consistency and understanding of the code."
       },
       "TEMTEM":{
         "LEAD": "A Web application for Temtem strategies, in progress ",
@@ -129,7 +129,7 @@
       },
       "CHIRO":{
         "LEAD": "Dynamic website for contacting, reserving and introducing a Chiropractor",
-        "CONTENT": "This dynamic website is written with the following technologies : Angular et Firebase. I am using a serverless architecture with Firebase cloud functions to process my reservetion and contact tasks. The challenge here was to synchronise the web calendar with the client's one already existing. To implement this I used Google APIs in my cloud functions to update the calednars when needed."
+        "CONTENT": "This dynamic website is written with the following technologies : Angular et Firebase. I am using a serverless architecture with Firebase cloud functions to process my booking and contact tasks. The challenge here was to synchronize the web calendar with the client's one already existing. To implement this I used Google APIs in my cloud functions to update the calendars when needed."
       },
       "SPACE":{
         "LEAD": "Fun Online 3D Space Invaders game with Javascript libraries, give it a try !",
@@ -137,15 +137,15 @@
       },
       "GGLASS":{
         "LEAD": "An augmented reality project with Pernod-Ricard and the Goggle Glass, a real challenge with one of the most cutting edge tool",
-        "CONTENT": "The goal was to create useful apps for the company's industry, I built two apps that can work in the warehouses and the vineyards to display information while having free hands. To develop with this device I used Java with the Android SDK that contains all the sources needed to work with the glasses. I also created a tutorial to help people to built app with Google Glass."
+        "CONTENT": "The goal was to create useful apps for the company's industry, I built two apps that can work in the warehouses and the vineyards to display information while having free hands. To develop with this device, I used Java with the Android SDK that contains all the sources needed to work with the glasses. I also created a tutorial/documentation to help people to build app with Google Glass."
       },
       "GARO":{
         "LEAD": "A tweet war game website played during the french rock festival Garorock",
-        "CONTENT": "This webapp was deployed during the french rock festival Garorock. The french bank Crédit Agricole asked for a tweet war game to entertain their guest at the festival. This webapp is developed with PHP and Javascript Ajax/Jquery, using the twitter API to retrieve guest's twweets"
+        "CONTENT": "This webapp was deployed during the french rock festival Garorock. The french bank Crédit Agricole asked for a tweet war game to entertain their guest at the festival. This webapp is developed with PHP and Javascript Ajax/Jquery, using the twitter API to retrieve guest's tweets"
       },
       "BA365":{
         "LEAD": "A website and native IOS/Android apps for complex and futuristic challenges",
-        "CONTENT": "This project was very challenging from a technical point of view, I had to implement a website and two native apps taht works with each others real-time to process a lot of data and Estimote movements and interactions triggers. I sugested Nativescript to create all of those apps with an unique code base allowing us to ensure coherance, security for all the platforms."
+        "CONTENT": "This project was very challenging from a technical point of view, I had to implement a website and two native apps that works with each other’s real-time to process a lot of data and Estimote movements and interactions triggers. I sugested Nativescript to create all of those apps with an unique code base allowing us to ensure coherence, security for all the platforms."
       }
     }
   },
