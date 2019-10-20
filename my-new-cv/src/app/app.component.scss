@@ -8,23 +8,32 @@
   left: 0;
   z-index: 1000000;
   position: fixed;
-  background-color: hsla(0, 0%, 5%, 0.6588235294117647);
+  background-color: transparent;
 
   .outer-marquee {
     height: 100%;
     width: 100%;
 
     img {
-      width: 200px;
-      border: 2px solid $colorSecondary;
+      width: 275px;
+      border: 20px solid $colorSecondary;
       border-radius: 1000px;
       background-color: $colorSecondary;
+      animation: color_change 2s infinite alternate, rotating 2s linear infinite;
+      -webkit-animation: color_change 2s infinite alternate, rotating 2s linear infinite;
+      -moz-animation: color_change 2s infinite alternate, rotating 2s linear infinite;
+      -ms-animation: color_change 2s infinite alternate, rotating 2s linear infinite;
+      -o-animation: color_change 2s infinite alternate, rotating 2s linear infinite;
     }
 
     .inner-marquee {
-      width: 200px;
+      width: 275px;
       position: absolute;
       animation: marqueeLeftRight 5s linear alternate infinite, marqueeTopBot 3s linear alternate infinite;
+      -webkit-animation: marqueeLeftRight 5s linear alternate infinite, marqueeTopBot 3s linear alternate infinite;
+      -moz-animation: marqueeLeftRight 5s linear alternate infinite, marqueeTopBot 3s linear alternate infinite;
+      -ms-animation: marqueeLeftRight 5s linear alternate infinite, marqueeTopBot 3s linear alternate infinite;
+      -o-animation: marqueeLeftRight 5s linear alternate infinite, marqueeTopBot 3s linear alternate infinite;
     }
   }
 }
@@ -35,7 +44,7 @@
   }
 
   100% {
-    top: calc(100% - 200px);
+    top: calc(100% - 275px);
   }
 }
 
@@ -45,36 +54,80 @@
   }
 
   100% {
-    left: calc(100% - 200px);
+    left: calc(100% - 275px);
   }
 }
 
-
-
+@keyframes color_change {
+  0% { border-color: blue; }
+  25% { border-color: purple; }
+  50% { border-color: red; }
+  75% { border-color: yellow; }
+  100% { border-color: green; }
+}
 
 // EDGE DOESNT SUPPORT CACL() IN ANIMATION (lol) https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/105834/
 @supports (-ms-ime-align:auto) {
   .inner-marquee {
+    
     animation: marqueeLeftRightForEdge 5s linear alternate infinite, marqueeTopBotForEdge 3s linear alternate infinite !important;
+    -webkit-animation: marqueeLeftRightForEdge 5s linear alternate infinite, marqueeTopBotForEdge 3s linear alternate infinite !important;
+    -ms-animation: marqueeLeftRightForEdge 5s linear alternate infinite, marqueeTopBotForEdge 3s linear alternate infinite !important;
+    -o-animation: marqueeLeftRightForEdge 5s linear alternate infinite, marqueeTopBotForEdge 3s linear alternate infinite !important;
   }
 }
 
 @keyframes marqueeTopBotForEdge {
-    0% {
-      top: 0;
-    }
-  
-    100% {
-      top: 80%;
-    }
+  0% {
+    top: 0;
   }
-  
-  @keyframes marqueeLeftRightForEdge {
-    0% {
-      left: 0;
-    }
-  
-    100% {
-      left: 80%;
-    }
+
+  100% {
+    top: 70%;
   }
+}
+
+@keyframes marqueeLeftRightForEdge {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: 85%;
+  }
+}
+
+@-webkit-keyframes rotating
+
+/* Safari and Chrome */
+  {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

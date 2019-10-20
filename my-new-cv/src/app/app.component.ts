@@ -8,17 +8,20 @@ import { Subject } from 'rxjs';
 })
 export class AppComponent {
   title = 'my-new-cv';
-  userActivity;
-  userInactive: Subject<any> = new Subject();
-  isInactive = false;
+  konami = false;
+
+  allowedKeys = {
+    37: 'left',
+    38: 'up',
+    39: 'right',
+    40: 'down',
+    65: 'a',
+    66: 'b'
+  };
+  konamiCode = ['up', 'up', 'down', 'down', 'left', 'right', 'left', 'right', 'b', 'a'];
+  konamiCodePosition = 0;
 
   constructor() {
-    this.setTimeout();
-    this.userInactive.subscribe(() => {
-      this.isInactive = true;
-    });
-
-
     console.log(`%c 
      ______________
    <  Bienvenue !!  >
@@ -30,20 +33,26 @@ export class AppComponent {
                    ||     ||`, "font-family:monospace");
   }
 
-  setTimeout() {
-    this.userActivity = setTimeout(() => this.userInactive.next(undefined), 60000);
-  }
+  @HostListener('window:keydown', ['$event']) testKonami(e: KeyboardEvent) {
+    var key = this.allowedKeys[e.keyCode];
+    // get the value of the required key from the konami code
+    var requiredKey = this.konamiCode[this.konamiCodePosition];
 
-  @HostListener('window:mousemove') onMouse() {
-    clearTimeout(this.userActivity);
-    this.isInactive = false;
-    this.setTimeout();
-  }
+    // compare the key with the required key
+    if (key == requiredKey) {
 
-  @HostListener('window:scroll') onScroll() {
-    clearTimeout(this.userActivity);
-    this.isInactive = false;
-    this.setTimeout();
+      // move to the next key in the konami code sequence
+      this.konamiCodePosition++;
+
+      // if the last key is reached, activate cheats
+      if (this.konamiCodePosition == this.konamiCode.length) {
+        this.konami = true;
+        this.konamiCodePosition = 0;
+      }
+    } else {
+      this.konamiCodePosition = 0;
+    }
   }
 }
+
 
