@@ -6,12 +6,12 @@
     </h4>
 
     <div class="has-text-centered filter-buttons">
-      <a class="button is-primary is-rounded" (click)="filterWorks('all')"
+      <a class="button is-primary is-rounded" (click)="filterWorks('all')" aria-label="Filter All Works"
         [ngClass]="activeFilter !== 'all' ? 'is-outlined' : ''">{{'WORKS.ALL' | translate}}</a>
       <a class="button is-primary is-rounded" (click)="filterWorks('pro')"
-        [ngClass]="activeFilter !== 'pro' ? 'is-outlined' : ''">Pro</a>
+        [ngClass]="activeFilter !== 'pro' ? 'is-outlined' : ''" aria-label="Filter Pro Works">Pro</a>
       <a class="button is-primary is-rounded" (click)="filterWorks('perso')"
-        [ngClass]="activeFilter !== 'perso' ? 'is-outlined' : ''">Perso</a>
+        [ngClass]="activeFilter !== 'perso' ? 'is-outlined' : ''" aria-label="Filter Perso Works">Perso</a>
     </div>
 
     <div class="projects">
@@ -28,13 +28,13 @@
               <div class="rounded-card-description">
                 <p [innerHtml]="project.description | translate"></p>
                 <div>
-                  <a class="button is-warning is-rounded"
+                  <a class="button is-warning is-rounded" aria-label="Readmore about this work"
                   (click)="selectProject(project)">{{'WORKS.READMORE' | translate}}</a>
                 </div>
               </div>
               <div *ngIf="selectedProject && selectedProject.name === project.name" [id]="project.name"
                 class="rounded-card-content">
-                <a class="selected-project-close" (click)="selectedProject = null"><i class="fa fa-times"></i></a>
+                <a class="selected-project-close" (click)="selectedProject = null" aria-label="Close this card"><i class="fa fa-times"></i></a>
                 <div class="columns">
 
                   <div class="column is-one-third project-content-image">
@@ -58,10 +58,10 @@
 
                 <div class="project-selected-actions">
                   <ng-container *ngFor="let button of project.buttons">
-                    <a *ngIf="button.type === 'classic'" class="button is-link is-rounded m-r-md" target="_blank" [href]="button.link">
+                    <a *ngIf="button.type === 'classic'" class="button is-link is-rounded m-r-md" target="_blank" rel="noopener" [href]="button.link" aria-label="View work">
                       <span>{{'WORKS.VIEW' | translate}}</span>
                     </a>
-                    <a *ngIf="button.type === 'github'" class="button is-rounded" target="_blank" [href]="button.link">
+                    <a *ngIf="button.type === 'github'" class="button is-rounded" target="_blank" rel="noopener" [href]="button.link" aria-label="View work code">
                       <span class="icon">
                         <i class="fa fa-github"></i>
                       </span>

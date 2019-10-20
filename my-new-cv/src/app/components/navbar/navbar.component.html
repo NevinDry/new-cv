@@ -8,7 +8,7 @@
         <img src="../../../assets/frflag.png" [ngClass]="lang === 'fr' ? 'active' : ''" (click)="changeLang('fr')" alt="français" /> 
         <img src="../../../assets/enflag.png" [ngClass]="lang === 'eng' ? 'active' : ''" (click)="changeLang('eng')" alt="english" />
     </div>
-    <a class="navbar-burger" (click)="toggleBurger()" [ngClass]="burgerIsActive ? 'is-active' : ''" role="button" aria-label="menu" aria-expanded="false">
+    <a class="navbar-burger" aria-label="Navigation Burger" (click)="toggleBurger()" [ngClass]="burgerIsActive ? 'is-active' : ''" role="button" aria-label="menu" aria-expanded="false">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>

@@ -18,9 +18,9 @@
 
           <div class="column is-6">
             <div class="field">
-              <label class="label">{{'CONTACT.FORM.NAME' | translate}}</label>
+              <label class="label" for="surname">{{'CONTACT.FORM.NAME' | translate}}</label>
               <div class="control">
-                <input class="input" type="text" formControlName="surname"
+                <input class="input" type="text" formControlName="surname" id="surname"
                   [ngClass]="{ 'is-danger': submitted && contactForm.controls.surname.errors }" />
                 <span class="help is-danger"
                   *ngIf="submitted && contactForm.controls.surname.errors && contactForm.controls.surname.errors.required">{{'CONTACT.FORM.NAME' | translate}}
@@ -31,9 +31,9 @@
 
           <div class="column is-6">
             <div class="field">
-              <label class="label">{{'CONTACT.FORM.ENTREPRISE' | translate}}</label>
+              <label class="label"  for="entreprise">{{'CONTACT.FORM.ENTREPRISE' | translate}}</label>
               <div class="control">
-                <input class="input" type="text" formControlName="entreprise" />
+                <input class="input" type="text" formControlName="entreprise" id="entreprise"/>
               </div>
             </div>
           </div>
@@ -42,9 +42,9 @@
         <div class="columns">
           <div class="column is-6">
             <div class="field">
-              <label class="label">Email</label>
+              <label  for="email" class="label">Email</label>
               <div class="control has-icons-left has-icons-right">
-                <input class="input" type="email" formControlName="email"
+                <input class="input" type="email" formControlName="email" id="email"
                   [ngClass]="{ 'is-danger': submitted && contactForm.controls.email.errors }" />
                 <span
                   *ngIf="submitted && contactForm.controls.email.errors && contactForm.controls.email.errors.required"
@@ -62,9 +62,9 @@
 
           <div class="column is-6">
             <div class="field">
-              <label class="label">{{'CONTACT.FORM.PHONE' | translate}}</label>
+              <label for="phone" class="label">{{'CONTACT.FORM.PHONE' | translate}}</label>
               <div class="control has-icons-left">
-                <input class="input" type="text" formControlName="phone">
+                <input class="input" type="text" formControlName="phone"  id="phone">
                 <span class="icon is-small is-left">
                   <i class="fa fa-phone"></i>
                 </span>
@@ -76,9 +76,9 @@
         <div class="columns">
           <div class="column is-full">
             <div class="field">
-              <label class="label">{{'CONTACT.FORM.MSG' | translate}}</label>
+              <label class="label" for="content">{{'CONTACT.FORM.MSG' | translate}}</label>
               <div class="control">
-                <textarea formControlName="content"
+                <textarea formControlName="content" id="content"
                   [ngClass]="{ 'is-danger': submitted && contactForm.controls.content.errors }" class="textarea"
                   [placeholder]="'CONTACT.FORM.PH' | translate"></textarea>
                 <div *ngIf="submitted && contactForm.controls.content.errors" class="help is-danger">
@@ -95,8 +95,8 @@
 
             <div class="field is-grouped">
               <div class="control send-button">
-                <a *ngIf="loading" class="button is-rounded is-warning is-loading">{{'CONTACT.FORM.SENDING' | translate}}</a>
-                <a *ngIf="!loading" class="button is-rounded is-warning has-text-weight-bold" type="submit" (click)="onSubmitContactForm()">
+                <a *ngIf="loading" aria-label="Send mail" class="button is-rounded is-warning is-loading">{{'CONTACT.FORM.SENDING' | translate}}</a>
+                <a *ngIf="!loading" aria-label="Send mail" class="button is-rounded is-warning has-text-weight-bold" type="submit" (click)="onSubmitContactForm()">
                   <span class="icon">
                     <i class="fa fa-paper-plane"></i>
                   </span>

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ScrollService } from 'src/app/services/scroll.service';
 
 @Component({
   selector: 'app-eductation',
