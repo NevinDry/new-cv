@@ -1,19 +1,20 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener, OnDestroy } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { EmailService } from 'src/app/services/email.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
-export class ContactComponent implements OnInit {
-
+export class ContactComponent implements OnInit, OnDestroy {
   contactForm: FormGroup;
   submitted: boolean = false;
   loading: boolean = false;
   sendMailSuccess: boolean = false;
   sendMailError: boolean = false;
+  private subscription: Subscription;
 
   constructor(private mailService: EmailService, private formBuilder: FormBuilder) { }
 
@@ -40,7 +41,7 @@ export class ContactComponent implements OnInit {
 
     this.loading = true;
 
-    this.mailService.sendContactMail(this.contactForm.value).subscribe(
+    this.subscription = this.mailService.sendContactMail(this.contactForm.value).subscribe(
       data => {
         this.loading = false;
         this.sendMailSuccess = true;
@@ -56,6 +57,10 @@ export class ContactComponent implements OnInit {
         }, 3000);
       }
     );
+  }
+  
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
   }
 
 }

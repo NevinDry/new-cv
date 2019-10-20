@@ -1,7 +1,8 @@
 import { ScrollService } from 'src/app/services/scroll.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 import { ScrollToService } from '@nicky-lenaers/ngx-scroll-to';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-works',
@@ -20,7 +21,7 @@ import { ScrollToService } from '@nicky-lenaers/ngx-scroll-to';
     ]),
   ]
 })
-export class WorksComponent implements OnInit {
+export class WorksComponent implements OnInit, OnDestroy {
 
   activeFilter = 'all';
 
@@ -128,6 +129,7 @@ export class WorksComponent implements OnInit {
 
   animate = false;
   selectedProject: any = null;
+  private subscription: Subscription;
 
   constructor(private scrollService: ScrollService, private _scrollToService: ScrollToService) { }
 
@@ -156,4 +158,7 @@ export class WorksComponent implements OnInit {
 
   }
 
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
+  }
 }

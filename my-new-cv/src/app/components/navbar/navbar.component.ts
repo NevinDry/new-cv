@@ -1,19 +1,21 @@
 import { ScrollString } from './../../enums/ScrollString';
 import { ScrollService } from './../../services/scroll.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ScrollSpyService, ScrollObjectInterface } from '@uniprank/ngx-scrollspy';
 import { TranslateService } from '@ngx-translate/core';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss']
 })
-export class NavbarComponent implements OnInit {
+export class NavbarComponent implements OnInit, OnDestroy {
   burgerIsActive: boolean = false;
   scrollElement = null;
   scrollString = "";
   lang: string;
+  private subscription: Subscription;
 
   constructor(public scrollService: ScrollService, public translate: TranslateService) {
     this.translate.addLangs(['fr', 'eng']);
@@ -53,5 +55,9 @@ export class NavbarComponent implements OnInit {
     this.translate.use(lang);
     this.lang = lang;
     localStorage.setItem('lang', lang);
+  }
+
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
   }
 }
