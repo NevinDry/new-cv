@@ -46,7 +46,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     InterestComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     BrowserAnimationsModule,
     AppRoutingModule,
     FormsModule,

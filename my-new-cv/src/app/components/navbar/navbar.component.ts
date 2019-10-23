@@ -1,23 +1,22 @@
 import { ScrollString } from './../../enums/ScrollString';
 import { ScrollService } from './../../services/scroll.service';
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { ScrollSpyService, ScrollObjectInterface } from '@uniprank/ngx-scrollspy';
 import { TranslateService } from '@ngx-translate/core';
-import { Subscription } from 'rxjs';
+import { isPlatformBrowser } from '@angular/common';
+import { Injectable, PLATFORM_ID, Inject } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss']
 })
-export class NavbarComponent implements OnInit, OnDestroy {
+export class NavbarComponent implements OnInit {
   burgerIsActive: boolean = false;
   scrollElement = null;
   scrollString = "";
   lang: string;
-  private subscription: Subscription;
 
-  constructor(public scrollService: ScrollService, public translate: TranslateService) {
+  constructor(public scrollService: ScrollService, @Inject(PLATFORM_ID) private platformId: Object, public translate: TranslateService) {
     this.translate.addLangs(['fr', 'eng']);
     this.translate.setDefaultLang('fr');
     this.lang = "fr";
@@ -30,19 +29,22 @@ export class NavbarComponent implements OnInit, OnDestroy {
       this.scrollString = ScrollString[value] || "";
     });
 
-    const lang = localStorage.getItem('lang');
-    if (lang) {
-      this.translate.use(lang);
-      this.lang = lang;
-    } else {
-      if (navigator.language === "fr") {
-        this.translate.use("fr");
-        this.lang = "fr";
+    if (isPlatformBrowser(this.platformId)) {
 
+      const lang = localStorage.getItem('lang');
+      if (lang) {
+        this.translate.use(lang);
+        this.lang = lang;
       } else {
-        this.translate.use("eng");
-        this.lang = "eng";
+        if (navigator.language === "fr") {
+          this.translate.use("fr");
+          this.lang = "fr";
 
+        } else {
+          this.translate.use("eng");
+          this.lang = "eng";
+
+        }
       }
     }
   }
@@ -52,12 +54,12 @@ export class NavbarComponent implements OnInit, OnDestroy {
   }
 
   changeLang(lang) {
-    this.translate.use(lang);
-    this.lang = lang;
-    localStorage.setItem('lang', lang);
-  }
+    if (isPlatformBrowser(this.platformId)) {
 
-  ngOnDestroy(): void {
-    this.subscription.unsubscribe();
+      this.translate.use(lang);
+      this.lang = lang;
+
+      localStorage.setItem('lang', lang);
+    }
   }
 }
