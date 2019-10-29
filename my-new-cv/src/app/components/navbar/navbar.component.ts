@@ -1,7 +1,6 @@
 import { ScrollString } from './../../enums/ScrollString';
 import { ScrollService } from './../../services/scroll.service';
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { ScrollSpyService, ScrollObjectInterface } from '@uniprank/ngx-scrollspy';
 import { TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
 
@@ -29,13 +28,12 @@ export class NavbarComponent implements OnInit, OnDestroy {
       this.scrollElement = value;
       this.scrollString = ScrollString[value] || "";
     });
-
     const lang = localStorage.getItem('lang');
     if (lang) {
       this.translate.use(lang);
       this.lang = lang;
     } else {
-      if (navigator.language === "fr") {
+      if (navigator.language.includes("fr")) {
         this.translate.use("fr");
         this.lang = "fr";
 
