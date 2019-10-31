@@ -15,8 +15,8 @@
     </a>
   <ul [ngClass]="burgerIsActive ? 'is-active' : ''" (click)="burgerIsActive = false">
     <li [ngx-scroll-to]="'#section-profile'" [ngClass]="scrollElement === 'section-profile' ? 'active' : ''">{{'SECTIONS.PROFILE' | translate}}</li>
-    <li [ngx-scroll-to]="'#section-education'" [ngClass]="scrollElement === 'section-education' ? 'active' : ''">{{'SECTIONS.EDU' | translate}}</li>
     <li [ngx-scroll-to]="'#section-experience'" [ngClass]="scrollElement === 'section-experience' ? 'active' : ''">{{'SECTIONS.EXP' | translate}}</li>
+    <li [ngx-scroll-to]="'#section-education'" [ngClass]="scrollElement === 'section-education' ? 'active' : ''">{{'SECTIONS.EDU' | translate}}</li>
     <li [ngx-scroll-to]="'#section-abilities'" [ngClass]="scrollElement === 'section-abilities' ? 'active' : ''">{{'SECTIONS.ABILITIES' | translate}}</li>
     <li [ngx-scroll-to]="'#section-works'" [ngClass]="scrollElement === 'section-works' ? 'active' : ''">{{'SECTIONS.WORK' | translate}}</li>
     <li [ngx-scroll-to]="'#section-interest'" [ngClass]="scrollElement === 'section-interest' ? 'active' : ''">{{'SECTIONS.INTEREST' | translate}}</li>
