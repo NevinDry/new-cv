@@ -3,7 +3,7 @@
 
 
 .experiences {
-  background-color: white;
+  background-color: beige;
 
   img {
     width: 40%;
@@ -19,9 +19,10 @@
   content: "";
   position: absolute;
   top: 0;
-  right: 0;
-  border-bottom: 200px solid transparent;
-  border-right: 400px solid beige;
+  left: 0;
+
+  border-bottom: 135px solid transparent;
+  border-left: 400px solid white;
   width: 0;
   z-index: 10;
 }
@@ -78,9 +79,10 @@
     content: "";
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
+
     border-bottom: 80px solid transparent;
-    border-right: 150px solid beige;
+    border-left: 150px solid white;
     width: 0;
     z-index: 10;
   }

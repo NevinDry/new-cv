@@ -2,15 +2,19 @@
 
 
 /* EDUCATION */
+.education{
+  background-color: white;
+
+}
+
 
 .education:after {
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
-  
-    border-bottom: 135px solid transparent;
-    border-left: 400px solid white;
+    right: 0;
+    border-bottom: 200px solid transparent;
+    border-right: 400px solid beige;
     width: 0;
     z-index: 10;
   }
@@ -23,10 +27,9 @@
       content: "";
       position: absolute;
       top: 0;
-      left: 0;
-  
+      right: 0;
       border-bottom: 80px solid transparent;
-      border-left: 150px solid white;
+      border-right: 150px solid beige;
       width: 0;
       z-index: 10;
     }
