@@ -34,11 +34,11 @@
     "EPSI": "Ecole d'ingénierie EPSI",
     "MASTER": {
       "TITLE": "Diplôme d'Ingénieur en solutions logicielles",
-      "CONTENT": "L'EPSI est une école d'ingénieur informatique basée dans 10 villes en France qui propose un cycle d'<b>ingéniérie informatique en alternance</b> pendant 3 ans. J'ai décidé de suivre <b>le cycle d'ingénieur logiciel </b> où j'ai pu apprendre à <b>développer et gérer des projets informatiques </b> en utilisant de multiples technologies et méthodologies. D'autres sujets tel que la <b>sécurité, la relation client et la gamification</b> m'ont été enseignés durant ma formation. A la fin de celle-ci, j'ai écrit <a href='https://drive.google.com/open?id=10nkKfuiuktVAWWuWEmfkNAwCPv-3y3-9' target='_blank' rel='noopener' aria-label='Memoire'>un mémoire</a> sur le virage digital des entreprises classiques en collaboration avec Pernod-Ricard, mon entreprise d'alternance."
+      "CONTENT": "L'EPSI est une école d'ingénieurs informatique basée dans 10 villes en France qui propose un cycle d'<b>ingénierie informatique en alternance</b> pendant 3 ans. J'ai décidé de suivre <b>le cycle d'ingénieur logiciel </b> où j'ai pu apprendre à <b>développer et gérer des projets informatiques </b> en utilisant de multiples technologies et méthodologies. D'autres sujets tels que la <b>sécurité, la relation client et la gamification</b> m'ont été enseignés durant ma formation. À la fin de celle-ci, j'ai écrit <a href='https://drive.google.com/open?id=10nkKfuiuktVAWWuWEmfkNAwCPv-3y3-9' target='_blank' rel='noopener' aria-label='Memoire'>un mémoire</a> sur le virage digital des entreprises classiques en collaboration avec Pernod-Ricard, mon entreprise d'alternance."
     },
     "BTS": {
       "TITLE": "BTS de développement informatique",
-      "CONTENT": "Aprés l'obtention de mon bac, j'ai décidé de suivre une formation générique en informatique à L'EPSI Bordeaux pour me <b>préparer à l'intégration d'une école d'ingénieur</b>. Pendant deux ans, j'ai acquis de <b>solides bases en développement et réseau système</b>."
+      "CONTENT": "Aprés l'obtention de mon bac, j'ai décidé de suivre une formation générique en informatique à L'EPSI Bordeaux pour me <b>préparer à l'intégration d'une école d'ingénieurs</b>. Pendant deux ans, j'ai acquis de <b>solides bases en développement et réseau système</b>."
     },
     "LANG": "Langues",
     "FRENCH": {
@@ -53,7 +53,7 @@
   "EXP": {
     "1ICT": {
       "TITLE": "Développeur Full Stack",
-      "LEAD": "J'ai participé à plusieurs missions chez 1ICT, une des entreprises de services informatiques possédant <b>la plus forte croissance en Australie</b>. Pendant trois ans j'ai tenu un rôle important dans la réalisation de plusieurs <b>projets Web</b>, incluant le <b>développement</b>, <b>le déploiement et le maintiens</b> de solutions Webs, ainsi que <b>le chiffrage et la gestion de projets clients</b>.  J'ai travaillé dans différents environnements qui requièrent une forte <b>adaptabilité et agilité</b> pour accomplir les objectifs. Cela implique une <b>communication claire et constante<b/> entre l'équipe et le client pour mettre en place des solutions à de complexes besoins métiers.",
+      "LEAD": "J'ai participé à plusieurs missions chez 1ICT, une des entreprises de services informatiques possédant <b>la plus forte croissance en Australie</b>. Pendant trois ans j'ai tenu un rôle important dans la réalisation de plusieurs <b>projets Web</b>, incluant le <b>développement</b>, <b>le déploiement et le maintien</b> de solutions Webs, ainsi que <b>le chiffrage et la gestion de projets clients</b>.  J'ai travaillé dans différents environnements qui requièrent une forte <b>adaptabilité et agilité</b> pour accomplir les objectifs. Cela implique une <b>communication claire et constante<b/> entre l'équipe et le client pour mettre en place des solutions à de complexes besoins métiers.",
       "MISSIONS": {
         "TITLE": "Descriptif des missions",
         "DOMINOS": {
@@ -76,7 +76,7 @@
     },
     "PERNOD": {
       "TITLE": "Solution Expert",
-      "LEAD": "Pernod-Ricard est le co-leader mondial des vins et spiritueux et par conséquant il possède de nombreuses problématiques logicielles. Pendant 2 ans en alternance, j'ai participé à la réalisation de solutions logicielles au sein d'une équipe dynamique et ambitieuse.",
+      "LEAD": "Pernod-Ricard est le co-leader mondial des vins et spiritueux et par conséquent il possède de nombreuses problématiques logicielles. Pendant 2 ans en alternance, j'ai participé à la réalisation de solutions logicielles au sein d'une équipe dynamique et ambitieuse.",
       "FIRST": {
         "TITLE": "Première mission (2014)",
         "CONTENT": "Analyse et développement <b>C# .Net</b> au sein du service informatique de MMPJ. <b>Décision et mise en place</b> du choix technique pour la migration des outils spécifiques du progiciel de gestion intégré de l’entreprise."
@@ -88,7 +88,7 @@
     },
     "SOLICIS": {
       "TITLE": "Développeur JAVA/Web",
-      "LEAD": "Solicis est une jeune entreprise de services informatiques basée à Angoulême. Elle propose des solutions innovantes et de pointes pour répondre aux besoins de multiples entreprises et industries. J'ai pris part à plusieurs projets lors de mon alternance chez Solicis, impliquant du développement multilangues et multiplateformes, du travail d'équipe et des relations clients. J'ai pu apporter et enrichir mes connaissances de diverses technologies tel que <b>Java, architecture REST,  Ajax/JQuery and Zend Framework (Php)</b>. Toute l'équipe de développement travaillait en suivant les directives de la <b>méthode agile nommée Scrum</b>."
+      "LEAD": "Solicis est une jeune entreprise de services informatiques basée à Angoulême. Elle propose des solutions innovantes et de pointes pour répondre aux besoins de multiples entreprises et industries. J'ai pris part à plusieurs projets lors de mon alternance chez Solicis, impliquant du développement multilangues et multiplateformes, du travail d'équipe et des relations clients. J'ai pu apporter et enrichir mes connaissances de diverses technologies telles que <b>Java, architecture REST,  Ajax/JQuery and Zend Framework (Php)</b>. Toute l'équipe de développement travaillait en suivant les directives de la <b>méthode agile nommée Scrum</b>."
     },
     "MMPJ": {
       "TITLE": "Développeur Web",
@@ -122,11 +122,11 @@
     "PROJECTS": {
       "SM": {
         "LEAD": "Le métronome le plus 'smart' et simple du Web. <br>Installable comme une application sur smartphone",
-        "CONTENT": "Smart Metronome est une application web progressive codée avec React. Le but de cette application est de fournir un métronome fiable et simple pour des sessions d'entrainement. Le challenge technique était d'obtenir une forte précision avec javascript éxécuté sur navigateur, pour cela j'ai implémenté des Web Workers pour effectuer du multi-threading et la Web Audio API de javascript pour le timing de l'horloge."
+        "CONTENT": "Smart Metronome est une application web progressive codée avec React. Le but de cette application est de fournir un métronome fiable et simple pour des sessions d'entrainement. Le challenge technique était d'obtenir une forte précision avec javascript exécuté sur navigateur, pour cela j'ai implémenté des Web Workers pour effectuer du multi-threading et la Web Audio API de javascript pour le timing de l'horloge."
       },
       "BLOG": {
         "LEAD": "Création d'un blog pour le web en utilisant le MEAN Stack (Mongo, Express, Angular, Node)",
-        "CONTENT": "Mean Stack Blog est un blog en ligne responsif que j'ai développé pour mon site. J'ulitise le MEAN stack qui est un ensemble d'outils de pointe permettant de réaliser un application Web fiable, sécurisée, maintenable et élégante. Un seul langage de programmation est utilisé pour toute l'application : Javascript, un avantage non négligeable assurant la cohérance et la compréhension du code."
+        "CONTENT": "Mean Stack Blog est un blog en ligne responsif que j'ai développé pour mon site. J'utilise le MEAN stack qui est un ensemble d'outils de pointe permettant de réaliser un application Web fiable, sécurisée, maintenable et élégante. Un seul langage de programmation est utilisé pour toute l'application : Javascript, un avantage non négligeable assurant la cohérence et la compréhension du code."
       },
       "TEMTEM": {
         "LEAD": "Un site Web de stratégie pour le jeu Temtem, en cours de dev",
@@ -134,15 +134,15 @@
       },
       "CHIRO": {
         "LEAD": "Site internet dynamique de présentation,  contact et réservation pour un chiropracteur",
-        "CONTENT": "Ce Site internet dynamique est écrit avec les technologies Angular et Firebase. J'utilise une architecture serverless avec des cloud functions firebase pour effectuer mes tâches de réservation et contact. Le défi ici était de synchroniser le calendrier du site avec celui du client déja existant. Pour répondre à cette problématique j'ai utilisé les APIs Google dans mes cloud functions pour mettre à jour chaque calendrier."
+        "CONTENT": "Ce site internet dynamique est écrit avec les technologies Angular et Firebase. J'utilise une architecture serverless avec des cloud functions firebase pour effectuer mes tâches de réservation et contact. Le défi ici était de synchroniser le calendrier du site avec celui du client déja existant. Pour répondre à cette problématique j'ai utilisé les APIs Google dans mes cloud functions pour mettre à jour chaque calendrier."
       },
       "SPACE": {
         "LEAD": "Un jeu fun 3D Space Invaders en ligne utilisant des library 3D javascript, allez l'essayer  ! ",
-        "CONTENT": "Ce jeu a été réalisé avec la library javascript 3D three.js, qui nous permet de créer des formes polygones et intéragir avec elles. Ce jeu est le résultat d'un projet scolaire comportant des contraintes de temps et d'outil. Vous pouvez jouer au jeu, jeter un oeil au code ou regarder le magnifique (ironie) trailer que nous avons créé."
+        "CONTENT": "Ce jeu a été réalisé avec la library javascript 3D three.js, qui nous permet de créer des formes polygones et interagir avec elles. Ce jeu est le résultat d'un projet scolaire comportant des contraintes de temps et d'outil. Vous pouvez jouer au jeu, jeter un oeil au code ou regarder le magnifique (ironie) trailer que nous avons créé."
       },
       "GGLASS": {
         "LEAD": "La réalité augmentée avec Pernod-Ricard et les Google Glass, un challenge avec des outils de pointe",
-        "CONTENT": "L'objectif était de prototyper et développer des applications qui pourraient révolutionner certains des métiers propres à l'activité de l'entreprise. J'ai développé deux applications pour aider les ouvriers à obtenir des informations dans les entrepôts et dans les vignobles grâce au scan d'un code ou la géolocalisation, sans avoir à utiliser ses mains. Pour développer avec les Google Glass j'ai utilisé Java avec le Android SDK spécific fourni par Google."
+        "CONTENT": "L'objectif était de prototyper et développer des applications qui pourraient révolutionner certains des métiers propres à l'activité de l'entreprise. J'ai développé deux applications pour aider les ouvriers à obtenir des informations dans les entrepôts et dans les vignobles grâce au scan d'un code ou la géolocalisation, sans avoir à utiliser ses mains. Pour développer avec les Google Glass j'ai utilisé Java avec le Android SDK spécifique fourni par Google."
       },
       "GARO": {
         "LEAD": "Une guerre de tweets sous la forme d'un site créé pour le festival Garorock",
@@ -150,7 +150,7 @@
       },
       "BA365": {
         "LEAD": "Un site internet et des applications smartphone natives pour des problématiques métier complexes et futuristes",
-        "CONTENT": "Ce projet était un vrai challenge sur le plan technique, j'ai du mettre en place un site internet ainsi que des applications natives Android et Ios qui fonctionnent toutes ensembles en temps réel traitant de gros flux de données et de la détection de mouvement via capteur Estimote. En proposant Nativescript j'ai pu créer toutes ces applications avec un code unique permettant d'assurer cohérance et sécurité pour toutes les plateformes."
+        "CONTENT": "Ce projet était un vrai challenge sur le plan technique, j'ai dû mettre en place un site internet ainsi que des applications natives Android et Ios qui fonctionnent toutes ensemble en temps réel traitant de gros flux de données et de la détection de mouvement via capteur Estimote. En proposant Nativescript j'ai pu créer toutes ces applications avec un code unique permettant d'assurer cohérence et sécurité pour toutes les plateformes."
       }
     }
   },
@@ -161,7 +161,7 @@
     },
     "TRIP": {
       "TITLE": "L'aventure à l'étranger",
-      "CONTENT": "J'ai un fort appétit pour l'aventure, partout dans le monde. Le plus souvent avec un sac à dos et une tente, j'adore me balader pour découvrir de nouveaux paysages et cultures. <br> <br> J'ai eu la chance de voyager en Nouvelle-Zélande, Australie, Fiji, Japon, Canada, Etats-Unis et un peu partout en Europe."
+      "CONTENT": "J'ai un fort appétit pour l'aventure, partout dans le monde. Le plus souvent avec un sac à dos et une tente, j'adore me balader pour découvrir de nouveaux paysages et cultures. <br> <br> J'ai eu la chance de voyager en Nouvelle-Zélande, Australie, Fiji, Japon, Canada, États-Unis et un peu partout en Europe."
     }
   },
   "CONTACT": {
