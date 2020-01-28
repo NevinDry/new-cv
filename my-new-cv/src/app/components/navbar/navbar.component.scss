@@ -78,6 +78,12 @@
   display: none;
 }
 
+@media (max-height: 635px) {
+  .custom-navbar.scroll {
+    top: 5px;
+  }
+}
+
 @media (max-width: 1024px) {
   .custom-navbar {
     display: none;
