@@ -3,120 +3,13 @@
     <h3 class="subtitle is-size-1 has-text-centered has-text-primary p-t-lg">{{'SECTIONS.CONTACT' | translate}}</h3>
     <hr class="hr">
     <div class="columns contactColumns">
-      <form [formGroup]="contactForm" 
-        class="column has-text-left borderColorMain is-three-fifths m-r-sm">
-        <div class="columns ">
-          <div class="column is-full">
-            <span class="subtitle is-4">
-              {{'CONTACT.TITLE' | translate}}
-            </span>
-          </div>
-        </div>
-
-        <div class="columns ">
-
-
-          <div class="column is-6">
-            <div class="field">
-              <label class="label" for="surname">{{'CONTACT.FORM.NAME' | translate}}</label>
-              <div class="control">
-                <input class="input" type="text" formControlName="surname" id="surname"
-                  [ngClass]="{ 'is-danger': submitted && contactForm.controls.surname.errors }" />
-                <span class="help is-danger"
-                  *ngIf="submitted && contactForm.controls.surname.errors && contactForm.controls.surname.errors.required">{{'CONTACT.FORM.NAME' | translate}}
-                  {{'CONTACT.FORM.REQ' | translate}}</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="column is-6">
-            <div class="field">
-              <label class="label"  for="entreprise">{{'CONTACT.FORM.ENTREPRISE' | translate}}</label>
-              <div class="control">
-                <input class="input" type="text" formControlName="entreprise" id="entreprise"/>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="columns">
-          <div class="column is-6">
-            <div class="field">
-              <label  for="email" class="label">Email</label>
-              <div class="control has-icons-left has-icons-right">
-                <input class="input" type="email" formControlName="email" id="email"
-                  [ngClass]="{ 'is-danger': submitted && contactForm.controls.email.errors }" />
-                <span
-                  *ngIf="submitted && contactForm.controls.email.errors && contactForm.controls.email.errors.required"
-                  class="help is-danger">Email
-                  {{'CONTACT.FORM.REQ' | translate}}</span>
-                <span *ngIf="submitted && contactForm.controls.email.errors && contactForm.controls.email.errors.email"
-                  class="help is-danger">Email
-                  {{'CONTACT.FORM.INV' | translate}}</span>
-                <span class="icon is-small is-left">
-                  <i class="fa fa-envelope"></i>
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <div class="column is-6">
-            <div class="field">
-              <label for="phone" class="label">{{'CONTACT.FORM.PHONE' | translate}}</label>
-              <div class="control has-icons-left">
-                <input class="input" type="text" formControlName="phone"  id="phone">
-                <span class="icon is-small is-left">
-                  <i class="fa fa-phone"></i>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="columns">
-          <div class="column is-full">
-            <div class="field">
-              <label class="label" for="content">{{'CONTACT.FORM.MSG' | translate}}</label>
-              <div class="control">
-                <textarea formControlName="content" id="content"
-                  [ngClass]="{ 'is-danger': submitted && contactForm.controls.content.errors }" class="textarea"
-                  [placeholder]="'CONTACT.FORM.PH' | translate"></textarea>
-                <div *ngIf="submitted && contactForm.controls.content.errors" class="help is-danger">
-                  <div *ngIf="contactForm.controls.content.errors.required">{{'CONTACT.FORM.MSG' | translate}}
-                    {{'CONTACT.FORM.REQ' | translate}}</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="columns">
-          <div class="column is-full">
-
-            <div class="field is-grouped">
-              <div class="control send-button">
-                <a *ngIf="loading" aria-label="Send mail" class="button is-rounded is-warning is-loading">{{'CONTACT.FORM.SENDING' | translate}}</a>
-                <a *ngIf="!loading" aria-label="Send mail" class="button is-rounded is-warning has-text-weight-bold" type="submit" (click)="onSubmitContactForm()">
-                  <span class="icon">
-                    <i class="fa fa-paper-plane"></i>
-                  </span>
-                  <span>{{'CONTACT.FORM.SEND' | translate}}</span>
-                </a>
-              </div>
-            </div>
-
-            <div *ngIf="sendMailSuccess" class="notification is-success">
-              <strong>{{'CONTACT.SUCCESS' | translate}}</strong>
-            </div>
-
-            <div *ngIf="sendMailError" class="notification is-danger">
-              {{'CONTACT.ERROR' | translate}}
-            </div>
-
-          </div>
-        </div>
-
-      </form>
+      <div class="column details">
+        <span class="subtitle is-4">{{'CONTACT.TITLE' | translate}}</span>
+        <br><br>
+        <a href="mailto:etienne.puissant@gmail.com" aria-label="Send mail"><i class="fa fa-envelope"></i></a>
+        <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/etienne-puissant-2b895a5b/en?locale=en_US&trk=profile_view_lang_sel_click" aria-label="My Linkedin"><i
+            class="fab fa-linkedin" ></i></a>
+      </div>
 
       <div class="column details">
         <app-details></app-details>

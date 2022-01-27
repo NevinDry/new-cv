@@ -14,13 +14,13 @@
             <span aria-hidden="true"></span>
     </a>
   <ul [ngClass]="burgerIsActive ? 'is-active' : ''" (click)="burgerIsActive = false">
-    <li [ngx-scroll-to]="'#section-profile'" [ngClass]="scrollElement === 'section-profile' ? 'active' : ''">{{'SECTIONS.PROFILE' | translate}}</li>
-    <li [ngx-scroll-to]="'#section-experience'" [ngClass]="scrollElement === 'section-experience' ? 'active' : ''">{{'SECTIONS.EXP' | translate}}</li>
-    <li [ngx-scroll-to]="'#section-education'" [ngClass]="scrollElement === 'section-education' ? 'active' : ''">{{'SECTIONS.EDU' | translate}}</li>
-    <li [ngx-scroll-to]="'#section-abilities'" [ngClass]="scrollElement === 'section-abilities' ? 'active' : ''">{{'SECTIONS.ABILITIES' | translate}}</li>
-    <li [ngx-scroll-to]="'#section-works'" [ngClass]="scrollElement === 'section-works' ? 'active' : ''">{{'SECTIONS.WORK' | translate}}</li>
-    <li [ngx-scroll-to]="'#section-interest'" [ngClass]="scrollElement === 'section-interest' ? 'active' : ''">{{'SECTIONS.INTEREST' | translate}}</li>
-    <li [ngx-scroll-to]="'#section-contact'" [ngClass]="scrollElement === 'section-contact' ? 'active' : ''">{{'SECTIONS.CONTACT' | translate}}</li>
+    <li [ngxScrollTo]="'#section-profile'" [ngClass]="scrollElement === 'section-profile' ? 'active' : ''">{{'SECTIONS.PROFILE' | translate}}</li>
+    <li [ngxScrollTo]="'#section-experience'" [ngClass]="scrollElement === 'section-experience' ? 'active' : ''">{{'SECTIONS.EXP' | translate}}</li>
+    <li [ngxScrollTo]="'#section-education'" [ngClass]="scrollElement === 'section-education' ? 'active' : ''">{{'SECTIONS.EDU' | translate}}</li>
+    <li [ngxScrollTo]="'#section-abilities'" [ngClass]="scrollElement === 'section-abilities' ? 'active' : ''">{{'SECTIONS.ABILITIES' | translate}}</li>
+    <li [ngxScrollTo]="'#section-works'" [ngClass]="scrollElement === 'section-works' ? 'active' : ''">{{'SECTIONS.WORK' | translate}}</li>
+    <li [ngxScrollTo]="'#section-interest'" [ngClass]="scrollElement === 'section-interest' ? 'active' : ''">{{'SECTIONS.INTEREST' | translate}}</li>
+    <li [ngxScrollTo]="'#section-contact'" [ngClass]="scrollElement === 'section-contact' ? 'active' : ''">{{'SECTIONS.CONTACT' | translate}}</li>
     <li class="languages">
       <img src="../../../assets/frflag.png"  [ngClass]="lang === 'fr' ? 'active' : ''" (click)="changeLang('fr')" alt="français" /> 
       <img src="../../../assets/enflag.png" [ngClass]="lang === 'eng' ? 'active' : ''" (click)="changeLang('eng')" alt="english" />
